@@ -1,0 +1,30 @@
+.speaker {
+    .headline {
+        display: block;
+        margin-bottom: 30px;
+    }
+    .social {
+        float:right;
+    }
+
+    .presentation {
+        vertical-align: top;
+        text-align: right;
+    }
+    .graduated {
+        font-style: italic;
+        font-size: 0.8em;
+    }
+    .define{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        padding-left: 20px;
+        text-align: right;
+    }
+    blockquote {
+        margin-top: 40px;
+    }
+
+    .jobs { }
+    .location {font-size: 0.7em;}
+}

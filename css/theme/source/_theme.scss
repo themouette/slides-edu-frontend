@@ -3,7 +3,7 @@
 // fix for fontawesome to work in reveal.js.
 // see css/theme/source/_fontawesome.scss for details
 // Uncomment it if you plan to use fontawesome.
-//@import "fontawesome";
+@import "fontawesome";
 
 // Uncomment the following if you plan to use runnable
 // scripts.
@@ -13,4 +13,35 @@
 // ``` javascript
 // <pre><code class="javascript runnable">// Type your code here</code></pre>
 // ```
-// @import "runnable";
+@import "runnable";
+
+@import "cover";
+@import "speaker";
+
+// some utilities
+p.big {
+    font-size: 1.4em;
+}
+.two-columns > * {
+    width: 48%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.two-columns > *:nth-child(2n+1) {
+    margin-right: 2%;
+}
+
+pre.green {
+    box-shadow: 0 0 10px rgba(0,250,0,.6);
+    border-left: 5px solid green;
+}
+pre.red {
+    box-shadow: 0 0 10px rgba(250,0,0,.6);
+    border-left: 5px solid red;
+}
+.runable-run {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+>>>>>>> Add some style for speaker slide.
