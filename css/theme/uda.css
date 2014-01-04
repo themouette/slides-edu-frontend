@@ -133,6 +133,15 @@ body {
 .reveal .slide-number {
   color: #fc7022; }
 
+.reveal i.fa {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-size: 100%; }
+  .reveal i.fa.small {
+    font-size: 0.7em; }
+  .reveal i.fa.big {
+    font-size: 2em; }
+
 .cover .cover-img {
   display: block;
   height: 250px;
@@ -148,14 +157,26 @@ body {
   .cover .given-on:before {
     content: "Licence Professionnelle 2014"; }
 
-.reveal i.fa {
-  font-family: 'FontAwesome';
-  font-style: normal;
-  font-size: 100%; }
-  .reveal i.fa.small {
-    font-size: 0.7em; }
-  .reveal i.fa.big {
-    font-size: 2em; }
+.speaker .headline {
+  display: block;
+  margin-bottom: 30px; }
+.speaker .social {
+  float: right; }
+.speaker .presentation {
+  vertical-align: top;
+  text-align: right; }
+.speaker .graduated {
+  font-style: italic;
+  font-size: 0.8em; }
+.speaker .define {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding-left: 20px;
+  text-align: right; }
+.speaker blockquote {
+  margin-top: 40px; }
+.speaker .location {
+  font-size: 0.7em; }
 
 p.big {
   font-size: 1.4em; }
@@ -180,24 +201,3 @@ pre.red {
   position: absolute;
   right: 2px;
   top: 2px; }
-
-.speaker .headline {
-  display: block;
-  margin-bottom: 30px; }
-.speaker .social {
-  float: right; }
-.speaker .presentation {
-  vertical-align: top;
-  text-align: right; }
-.speaker .graduated {
-  font-style: italic;
-  font-size: 0.8em; }
-.speaker .define {
-  margin-top: 60px;
-  margin-bottom: 60px;
-  padding-left: 20px;
-  text-align: right; }
-.speaker blockquote {
-  margin-top: 40px; }
-.speaker .location {
-  font-size: 0.7em; }
