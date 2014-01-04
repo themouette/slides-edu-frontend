@@ -1,17 +1,9 @@
-Slides template
+Slides Frontend
 ===============
 
-This is a default repository to create a
-[reveal.js](https://github.com/hakimel/reveal.js/) presentations.
+This repository hosts my slides for my Frontend courses.
 
-Clone it and replace origin with your repository.
-
-``` sh
-$ PRESENTATION_NAME="your-presentation"
-$ git clone https://github.com/themouette/slites-template $PRESENTATION_NAME
-$ cd PRESENTATION_NAME
-$ git remote origin set-url git@github.com:you/${PRESENTATION_NAME}.git
-```
+See it online at http://themouette.github.io/slides-edu-frontend/
 
 Build
 -----
