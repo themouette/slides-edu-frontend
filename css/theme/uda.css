@@ -184,10 +184,13 @@ p.big {
 .two-columns > * {
   width: 48%;
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: top; }
 
 .two-columns > *:nth-child(2n+1) {
   margin-right: 2%; }
+
+.two-columns > pre {
+  vertical-align: middle; }
 
 pre.green {
   box-shadow: 0 0 10px rgba(0, 250, 0, 0.6);
