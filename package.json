@@ -1,7 +1,7 @@
 {
-  "name": "slides-bootstrap",
+  "name": "slides-edu-frontend",
   "version": "0.0.0",
-  "description": "Slides bootstrap",
+  "description": "Frontend (JavaScript, CSS and HTML) courses",
   "main": "index.js",
   "directories": { },
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/themouette/slides-bootstrap.git"
+    "url": "https://github.com/themouette/slides-edu-frontend"
   },
   "author": {
     "name": "Julien Muetton",
@@ -18,7 +18,7 @@
     "url": "http://muetton.me"
   },
   "license": "CC-BY-4.0",
-  "readmeFilename": "README",
+  "readmeFilename": "README.markdown",
   "dependencies": {
     "socket.io": "~0.9.16"
   },

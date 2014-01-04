@@ -34,14 +34,14 @@ module.exports = function(grunt) {
 //                template: 'index.tpl',
                 // default theme for presentation
                 // It remains possible to change it using the querystring.
-                theme: 'example',
+                theme: 'uda',
                 // An array of extra scripts to include.
                 scripts: [],
                 // An array of extra stylesheets to include
                 styles: [],
                 // Slidedeck title
                 // This is used as cover slide title and as html title.
-//                title: '',
+                title: 'Frontend',
                 // Description meta.
                 // default value is extracted from `package.json`
 //                description: '',
@@ -50,11 +50,11 @@ module.exports = function(grunt) {
 //                author: { name: '', url: '', email: ''},
                 // twitter username
                 // If provided, will be displayed after author name.
-//                twitter: '',
+                twitter: 'themouette',
                 // cover slide image url.
                 // This image is inserted between title and credits.
                 // example value 'img/jslogo.jpg'
-                cover: null
+                cover: 'img/jslogo.jpg'
             }
         },
         connect: {
