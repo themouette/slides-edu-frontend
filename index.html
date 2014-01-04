@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Frontend</title>
+
+        <meta name="description" content="Frontend (JavaScript, CSS and HTML) courses">
+        <meta name="author" content="Julien Muetton">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="reveal.js/css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/uda.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+        
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+        
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+            document.write( '<link rel="stylesheet" href="reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="reveal.js/lib/js/html5shiv.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section class="cover">
+                    <h1>Frontend</h1>
+                    
+                        <img src="img/jslogo.jpg" class="cover-img" />
+                    
+                    <p class="author">
+                    <small>
+                        By
+                        
+                            <a href="">Julien Muetton</a>
+                        
+                        
+                            / <a href="https://twitter.com/themouette">@themouette</a>
+                        
+                    </small>
+                    </p>
+                    <p class="given">
+                        <small class="given-at"></small>
+                        <small class="given-on"></small>
+                    </p>
+                </section>
+
+                <section data-markdown data-separator="^\n\*\*\**\n$" data-vertical="^\n---+\n$" data-notes="^Note:" data-charset="utf-8"><script type="text/template">
+Who is speaking ?
+=================
+
+---------------
+
+<!-- .slide: class="speaker" -->
+
+## Julien MUETTON
+
+<p class="headline">
+Freelance **Software Craftsman**
+<span class="social">
+[<i class="fa fa-twitter-square"></i>](https://twitter.com/themouette)
+[<i class="fa fa-github-square"></i>](https://github.com/themouette)
+[<i class="fa fa-envelope-o"></i>](mailto:julien@muetton.me)
+<span>
+</p>
+
+<div class="two-columns">
+<div class="jobs">
+<ul>
+    <li>[Almerys](https://www.almerys.com) <span class="location">(Clermont-Ferrand)</span></li>
+    <li>[ITNetwork](http://www.itnetwork.fr/) <span class="location">(Paris / Romagnat)</span></li>
+    <li>[Orange R&D](http://www.orange.fr) <span class="location">(Issy les Moulineaux, France)</span></li>
+    <li>[Efixo] [efixo] - [Neuf telecom] [neuf_telecom] now [SFR](http://www.sfr.fr/) <span class="location">(Marseille, France)</span></li>
+    <li>Co-founder of [Carpe Hora](http://www.carpe-hora.com/) <span class="location">(Clermont-Ferrand, France)</span></li>
+    <li>[MSD-Chibret](http://www.msd-france.com) <span class="location">(Riom, France)</span></li>
+</ul>
+</div>
+<div class="presentation">
+    <p class="define">
+        Passionate frontend developer, I believe in **standards** and **open source**.
+    </p>
+    <p class="graduated">
+        Graduated from [ESIGELEC](http://www.esigelec.fr/) <span class="location">(Rouen)</span>
+    </p>
+</div>
+</div>
+
+> <i class="fa fa-quote-right"></i> Read the code, not the doc !
+
+[efixo]: http://www.efixo.com/presse.html
+[neuf_telecom]: http://fr.wikipedia.org/wiki/Neuf_(entreprise)
+
+***
+
+Agenda
+======
+
+---
+
+### Week #1: HTML and DOM
+
+### Week #2: JavaScript language
+
+
+</script></section>
+<section data-markdown data-separator="^\n\*\*\**\n$" data-vertical="^\n---+\n$" data-notes="^Note:" data-charset="utf-8"><script type="text/template">
+HTML + DOM
+==========
+
+---
+
+HTML
+----
+
+</script></section>
+            </div> <!-- End of .slides -->
+
+        </div> <!-- end of #reveal -->
+
+        <script src="reveal.js/lib/js/head.min.js"></script>
+        <script src="reveal.js/js/reveal.min.js"></script>
+
+        
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Parallax scrolling
+                // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+                // parallaxBackgroundSize: '2100px 900px',
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+            function initRunnables() {
+                var runables = document.querySelectorAll('code.runable');
+                runables = Array.prototype.slice.call(runables);
+                runables.forEach(function (runable) {
+                    var pre = runable.parentElement;
+                    var btn = document.createElement('button');
+                    btn.innerHTML = 'Run';
+                    btn.className = 'runable-run';
+                    btn.addEventListener('click', function onRunnableClick(e) {
+                        eval(runable.innerHTML.replace(/<[^>]*>/g, ""));
+                        btn.blur();
+                    });
+                    pre.appendChild(btn);
+                });
+            }
+
+            initRunnables();
+
+        </script>
+
+    </body>
+</html>
