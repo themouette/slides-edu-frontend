@@ -25,10 +25,14 @@ p.big {
 .two-columns > * {
     width: 48%;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
 }
 .two-columns > *:nth-child(2n+1) {
     margin-right: 2%;
+}
+// override vertical behavior for code blocks
+.two-columns > pre {
+    vertical-align: middle;
 }
 
 pre.green {
