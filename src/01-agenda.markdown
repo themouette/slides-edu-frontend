@@ -38,7 +38,7 @@ Freelance **Software Craftsman**
 </div>
 </div>
 
-> <i class="fa fa-quote-right"></i> Read the code, not the doc !
+> Read the code, not the doc !
 
 [efixo]: http://www.efixo.com/presse.html
 [neuf_telecom]: http://fr.wikipedia.org/wiki/Neuf_(entreprise)

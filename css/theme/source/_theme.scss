@@ -22,7 +22,8 @@
 p.big {
     font-size: 1.4em;
 }
-.two-columns > * {
+.two-columns > *,
+.two-columns > pre {
     width: 48%;
     display: inline-block;
     vertical-align: top;
@@ -43,9 +44,34 @@ pre.red {
     box-shadow: 0 0 10px rgba(250,0,0,.6);
     border-left: 5px solid red;
 }
+
+
 .runable-run {
     position: absolute;
     right: 2px;
     top: 2px;
 }
->>>>>>> Add some style for speaker slide.
+
+.reveal blockquote p.source {
+    display: block;
+    text-align: right;
+    color: lighten( $mainColor, 20% );
+}
+.reveal blockquote {
+    padding: 5px 35px;
+    &:before {
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 3em;
+        text-align: left;
+        font-family: 'FontAwesome';
+        content: "\f10e";
+        color: lighten( $mainColor, 50% );
+    }
+}
+
+.reveal td > pre {
+    margin: 5px 0;
+    width: auto;
+}
