@@ -30,10 +30,10 @@
 
 
 // Override theme settings (see ../template/settings.scss)
-$mainColor: #A7A9AC;
-$headingColor: #00A2E0;
+$mainColor: #333;
+$headingColor: #0099d2;
 $backgroundColor: #fafafa;
-$linkColor: #FC7022;
+$linkColor: #8cd800;
 $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: rgba(79, 64, 28, 0.99);
 $headingTextShadow: -2px 4px 0 rgba(0,0,0,0.3), 0 5px 10px rgba(0,0,0,.25), 0 20px 20px rgba(0,0,0,.15);
