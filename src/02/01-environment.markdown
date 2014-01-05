@@ -22,3 +22,4 @@ Environment
 * Websites
 * Extensions
 
+[A list of web browsers](http://web.appstorm.net/roundups/browsers/the-ultimate-list-of-browsers/)
