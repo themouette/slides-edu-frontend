@@ -181,7 +181,7 @@ body {
 p.big {
   font-size: 1.4em; }
 
-.two-columns > * {
+.two-columns > *, .two-columns > pre {
   width: 48%;
   display: inline-block;
   vertical-align: top; }
@@ -204,3 +204,24 @@ pre.red {
   position: absolute;
   right: 2px;
   top: 2px; }
+
+.reveal blockquote p.source {
+  display: block;
+  text-align: right;
+  color: #dbdcde; }
+
+.reveal blockquote {
+  padding: 5px 35px; }
+  .reveal blockquote:before {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 3em;
+    text-align: left;
+    font-family: 'FontAwesome';
+    content: "\f10e";
+    color: white; }
+
+.reveal td > pre {
+  margin: 5px 0;
+  width: auto; }
