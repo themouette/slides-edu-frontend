@@ -55,6 +55,47 @@ module.exports = function(grunt) {
                 // This image is inserted between title and credits.
                 // example value 'img/jslogo.jpg'
                 cover: 'img/jslogo.jpg'
+            },
+
+            lesson1: {
+                options: {
+                    title: 'Inside Browserland'
+                },
+                files: [
+                    {src: 'src/01/**/*.markdown', dest: 'lesson1.html'}
+                ]
+            },
+            lesson2: {
+                options: {
+                    title: 'Javascript Language'
+                },
+                files: [
+                    {src: 'src/02/**/*.markdown', dest: 'lesson2.html'}
+                ]
+            },
+            lesson3: {
+                options: {
+                    title: 'Common Patterns'
+                },
+                files: [
+                    {src: 'src/03/**/*.markdown', dest: 'lesson3.html'}
+                ]
+            },
+            lesson4: {
+                options: {
+                    title: 'Cross browser and MV*'
+                },
+                files: [
+                    {src: 'src/04/**/*.markdown', dest: 'lesson4.html'}
+                ]
+            },
+            lesson5: {
+                options: {
+                    title: 'Testing and tools'
+                },
+                files: [
+                    {src: 'src/05/**/*.markdown', dest: 'lesson5.html'}
+                ]
             }
         },
         connect: {

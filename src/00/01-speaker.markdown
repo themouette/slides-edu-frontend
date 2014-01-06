@@ -2,6 +2,7 @@ Who is speaking ?
 =================
 
 ---------------
+---
 
 <!-- .slide: class="speaker" -->
 
@@ -44,61 +45,15 @@ Freelance **Software Craftsman**
 [neuf_telecom]: http://fr.wikipedia.org/wiki/Neuf_(entreprise)
 
 ---
+---
 
 [![Clermont'ech](img/clermontech.png)](http://clermontech.org) <!-- .element: style="height:500px;display:block;" -->
 
+---
 ---
 
 # ClermontJS
 
 [![ClermontJS](img/jslogo.jpg)](https://twitter.com/ClermontJS) <!-- .element: style="height:300px;display:block;" -->
 
----
----
 
-Agenda
-======
-
----
-
-### Week #1: Environments and fundamentals
-
-* Environments
-* HTML
-* DOM
-* Dev Tools
-* CSS
-* Preprocesseurs CSS
-
----
-
-### Week #2: JavaScript language
-
-* language structure
-* JSON
-* Coding standards
-* variables and contexts
-* closures
-* invocation pattern
-* object model
-
----
-
-### Week #3: Patterns
-
-* Modules
-* Async programming
-* Functional programming
-* `MV*`
-
----
-
-### Week #4: Testing/Tools
-
-* Functional testing
-* Unit testing
-* Mocking
-* Linter
-* Minify
-* Grunt
-* npm - bower
