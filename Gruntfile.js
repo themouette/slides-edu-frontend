@@ -59,7 +59,8 @@ module.exports = function(grunt) {
 
             lesson1: {
                 options: {
-                    title: 'Inside Browserland'
+                    title: 'Inside Browserland',
+                    cover: 'img/01/html-sticker.png'
                 },
                 files: [
                     {src: 'src/01/**/*.markdown', dest: 'lesson1.html'}
