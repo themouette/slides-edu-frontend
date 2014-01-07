@@ -17,7 +17,7 @@ Document, window and elements
 
 ---
 
-Retreiving elements
+Retreiving Elements
 -------------------
 
 * getElementById
@@ -27,25 +27,53 @@ Retreiving elements
 
 ---
 
-Tree traversal
+Tree Traversal
 --------------
 
-* children
-* parent
+* childNodes
+* parentElement
 
 ---
 
-Tree insertion
+Tree Insertion
 --------------
 
-* insertBefore
+[**appendChild**](https://developer.mozilla.org/en-US/docs/Web/API/Node.appendChild) to insert at last position:
+
+``` javascript
+var child = element.appendChild(child);
+```
+
+[**insertBefore**](https://developer.mozilla.org/en-US/docs/Web/API/Node.insertBefore) to insert before an existing child:
+
+``` javascript
+var insertedElement = parentElement.insertBefore(newElement, referenceElement);
+```
+
+---
+
+Tree Removal
+------------
+
+[**removeChild**](https://developer.mozilla.org/en-US/docs/Web/API/Node.removeChild) to remove an existing child:
+
+``` javascript
+var oldChild = element.removeChild(child);
+```
+
+---
+
+Observable
+----------
+
+* addEventListener (attachEvent IE <= 8)
 
 ---
 
 Element API
 -----------
 
-* innerHTML
+* [innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element.innerHTML)
 * addClassName
 * style
 * getAttribute
