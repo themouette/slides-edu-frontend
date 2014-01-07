@@ -123,7 +123,7 @@ and value <!-- .element: class="fragment" data-fragment-index="4" style="float: 
 
 <!-- .element: class="fragment" data-fragment-index="5" style="color: blue;margin-top: 120px;"--> closing is **optional**
 
-<!-- .element: class="fragment" data-fragment-index="6" style="margin-top: 20px;"--> but explicit is **always** better than explicit
+<!-- .element: class="fragment" data-fragment-index="6" style="margin-top: 20px;"--> but explicit is **always** better than implicit
 
 ---
 
