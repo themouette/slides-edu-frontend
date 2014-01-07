@@ -178,38 +178,59 @@ body {
 .speaker .location {
   font-size: 0.7em; }
 
-p.big {
-  font-size: 1.4em; }
+.reveal .html-demo table, .html-demo table {
+  width: 80%;
+  margin: auto; }
+.reveal .html-demo table, .reveal .html-demo td, .reveal .html-demo th, .html-demo table, .html-demo td, .html-demo th {
+  border: 1px solid #a7a9ac;
+  text-align: center; }
+.reveal .html-demo.lists .three-columns, .html-demo.lists .three-columns {
+  margin-top: 50px; }
+.reveal .html-demo form, .html-demo form {
+  margin-bottom: 50px; }
+  .reveal .html-demo form output[name="result"], .html-demo form output[name="result"] {
+    display: inline-block;
+    width: 3em; }
+  .reveal .html-demo form input, .html-demo form input {
+    font-size: 0.8em; }
+.reveal .html-demo input.validate:invalid, .html-demo input.validate:invalid {
+  background-color: red; }
+.reveal .html-demo input.validate:valid, .html-demo input.validate:valid {
+  background-color: #aed679; }
 
-.two-columns > *, .two-columns > pre {
+.reveal p.big {
+  font-size: 1.4em; }
+.reveal .two-columns > *, .reveal .two-columns > pre {
   width: 48%;
   display: inline-block;
   vertical-align: top; }
-
-.two-columns > *:nth-child(2n+1) {
+.reveal .two-columns > *:nth-child(2n+1) {
   margin-right: 2%; }
-
-.two-columns > pre {
+.reveal .two-columns > pre {
   vertical-align: middle; }
-
-pre.green {
+.reveal .three-columns > *, .reveal .three-columns > pre {
+  width: 31%;
+  margin-right: 2%;
+  display: inline-block;
+  vertical-align: top; }
+.reveal .three-columns > *:nth-child(3n+0) {
+  margin-right: 0%; }
+.reveal .three-columns > pre {
+  vertical-align: top; }
+.reveal pre.green {
   box-shadow: 0 0 10px rgba(0, 250, 0, 0.6);
   border-left: 5px solid green; }
-
-pre.red {
+.reveal pre.red {
   box-shadow: 0 0 10px rgba(250, 0, 0, 0.6);
   border-left: 5px solid red; }
-
-.runable-run {
+.reveal .runable-run {
   position: absolute;
   right: 2px;
   top: 2px; }
-
 .reveal blockquote p.source {
   display: block;
   text-align: right;
   color: #dbdcde; }
-
 .reveal blockquote {
   padding: 5px 35px; }
   .reveal blockquote:before {
@@ -221,11 +242,9 @@ pre.red {
     font-family: 'FontAwesome';
     content: "\f10e";
     color: white; }
-
-.reveal td > pre {
+.reveal > pre {
   margin: 5px 0;
   width: auto; }
-
 .reveal accronym {
   text-decoration: none;
   border-bottom: 1px dashed #fc7022; }
