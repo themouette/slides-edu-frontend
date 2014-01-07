@@ -17,65 +17,83 @@
 
 @import "cover";
 @import "speaker";
+@import "html_demo";
 
-// some utilities
-p.big {
-    font-size: 1.4em;
-}
-.two-columns > *,
-.two-columns > pre {
-    width: 48%;
-    display: inline-block;
-    vertical-align: top;
-}
-.two-columns > *:nth-child(2n+1) {
-    margin-right: 2%;
-}
-// override vertical behavior for code blocks
-.two-columns > pre {
-    vertical-align: middle;
-}
-
-pre.green {
-    box-shadow: 0 0 10px rgba(0,250,0,.6);
-    border-left: 5px solid green;
-}
-pre.red {
-    box-shadow: 0 0 10px rgba(250,0,0,.6);
-    border-left: 5px solid red;
-}
-
-
-.runable-run {
-    position: absolute;
-    right: 2px;
-    top: 2px;
-}
-
-.reveal blockquote p.source {
-    display: block;
-    text-align: right;
-    color: lighten( $mainColor, 20% );
-}
-.reveal blockquote {
-    padding: 5px 35px;
-    &:before {
-        position: absolute;
-        top: 3px;
-        left: 3px;
-        width: 3em;
-        text-align: left;
-        font-family: 'FontAwesome';
-        content: "\f10e";
-        color: lighten( $mainColor, 50% );
+.reveal {
+    // some utilities
+    p.big {
+        font-size: 1.4em;
     }
-}
+    .two-columns > *,
+    .two-columns > pre {
+        width: 48%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .two-columns > *:nth-child(2n+1) {
+        margin-right: 2%;
+    }
+    // override vertical behavior for code blocks
+    .two-columns > pre {
+        vertical-align: middle;
+    }
 
-.reveal td > pre {
-    margin: 5px 0;
-    width: auto;
-}
+    .three-columns > *,
+    .three-columns > pre {
+        width: 31%;
+        margin-right: 2%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .three-columns > *:nth-child(3n+0) {
+        margin-right: 0%;
+    }
+    // override vertical behavior for code blocks
+    .three-columns > pre {
+        vertical-align: top;
+    }
 
-.reveal accronym {
-    text-decoration: none; border-bottom:1px dashed $linkColor;
+    pre.green {
+        box-shadow: 0 0 10px rgba(0,250,0,.6);
+        border-left: 5px solid green;
+    }
+    pre.red {
+        box-shadow: 0 0 10px rgba(250,0,0,.6);
+        border-left: 5px solid red;
+    }
+
+
+    .runable-run {
+        position: absolute;
+        right: 2px;
+        top: 2px;
+    }
+
+    blockquote p.source {
+        display: block;
+        text-align: right;
+        color: lighten( $mainColor, 20% );
+    }
+    blockquote {
+        padding: 5px 35px;
+        &:before {
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 3em;
+            text-align: left;
+            font-family: 'FontAwesome';
+            content: "\f10e";
+            color: lighten( $mainColor, 50% );
+        }
+    }
+
+    & > pre {
+        margin: 5px 0;
+        width: auto;
+    }
+
+    accronym {
+        text-decoration: none; border-bottom:1px dashed $linkColor;
+    }
 }

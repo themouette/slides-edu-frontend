@@ -1,0 +1,37 @@
+.reveal .html-demo,
+.html-demo {
+    table {
+        width: 80%;
+        margin: auto;
+    }
+    table, td, th {
+        border: 1px solid $mainColor;
+        text-align: center;
+    }
+
+    &.lists {
+        .three-columns { margin-top: 50px; }
+    }
+
+    form {
+        margin-bottom: 50px;
+
+        output[name="result"] {
+            display: inline-block;
+            width: 3em;
+        }
+
+        input {
+            font-size: 0.8em;
+        }
+    }
+
+    input.validate {
+        &:invalid {
+            background-color: red;
+        }
+        &:valid {
+            background-color: #aed679;
+        }
+    }
+}
