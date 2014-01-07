@@ -1,6 +1,8 @@
 Css
 ===
 
+<!-- .slide: data-background="img/01/logo_css3.png" data-background-size="auto 70%" class="hide-title" -->
+
 ---
 
 Cascading StyleSheet

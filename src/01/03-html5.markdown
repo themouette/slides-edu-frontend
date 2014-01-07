@@ -1,6 +1,8 @@
 HTML5
 -----
 
+<!-- .slide: data-background="img/01/html5logo.svg" data-background-size="auto 70%" class="hide-title" -->
+
 ---
 
 References
