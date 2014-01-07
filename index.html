@@ -322,7 +322,7 @@ and value <!-- .element: class="fragment" data-fragment-index="4" style="float: 
 
 <!-- .element: class="fragment" data-fragment-index="5" style="color: blue;margin-top: 120px;"--> closing is **optional**
 
-<!-- .element: class="fragment" data-fragment-index="6" style="margin-top: 20px;"--> but explicit is **always** better than explicit
+<!-- .element: class="fragment" data-fragment-index="6" style="margin-top: 20px;"--> but explicit is **always** better than implicit
 
 ---
 
@@ -544,8 +544,94 @@ Find the slides on
 
 </script></section>
 <section data-markdown data-separator="^\n---+\n---+\n$" data-vertical="^\n---+\n$" data-notes="^Note:" data-charset="utf-8"><script type="text/template">
+DOM
+===
+
+---
+
+Document Object Modler
+----------------------
+
+> Some definition
+>
+> <!-- .element: class="source" --> [Wikipedia](http://en.wikipedia.org/wiki/Document_type_definition)
+
+---
+
+Document, window and elements
+-----------------------------
+
+---
+
+Retreiving Elements
+-------------------
+
+* getElementById
+* getElementsByTagName
+* querySelector
+* querySelectorAll
+
+---
+
+Tree Traversal
+--------------
+
+* childNodes
+* parentElement
+
+---
+
+Tree Insertion
+--------------
+
+[**appendChild**](https://developer.mozilla.org/en-US/docs/Web/API/Node.appendChild) to insert at last position:
+
+``` javascript
+var child = element.appendChild(child);
+```
+
+[**insertBefore**](https://developer.mozilla.org/en-US/docs/Web/API/Node.insertBefore) to insert before an existing child:
+
+``` javascript
+var insertedElement = parentElement.insertBefore(newElement, referenceElement);
+```
+
+---
+
+Tree Removal
+------------
+
+[**removeChild**](https://developer.mozilla.org/en-US/docs/Web/API/Node.removeChild) to remove an existing child:
+
+``` javascript
+var oldChild = element.removeChild(child);
+```
+
+---
+
+Observable
+----------
+
+* addEventListener (attachEvent IE <= 8)
+
+---
+
+Element API
+-----------
+
+* [innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element.innerHTML)
+* addClassName
+* style
+* getAttribute
+* ...
+
+
+</script></section>
+<section data-markdown data-separator="^\n---+\n---+\n$" data-vertical="^\n---+\n$" data-notes="^Note:" data-charset="utf-8"><script type="text/template">
 HTML5
 -----
+
+<!-- .slide: data-background="img/01/html5logo.svg" data-background-size="auto 70%" class="hide-title" -->
 
 ---
 
@@ -761,92 +847,10 @@ img, video, audio, canvas...
 
 </script></section>
 <section data-markdown data-separator="^\n---+\n---+\n$" data-vertical="^\n---+\n$" data-notes="^Note:" data-charset="utf-8"><script type="text/template">
-DOM
-===
-
----
-
-Document Object Modler
-----------------------
-
-> Some definition
->
-> <!-- .element: class="source" --> [Wikipedia](http://en.wikipedia.org/wiki/Document_type_definition)
-
----
-
-Document, window and elements
------------------------------
-
----
-
-Retreiving Elements
--------------------
-
-* getElementById
-* getElementsByTagName
-* querySelector
-* querySelectorAll
-
----
-
-Tree Traversal
---------------
-
-* childNodes
-* parentElement
-
----
-
-Tree Insertion
---------------
-
-[**appendChild**](https://developer.mozilla.org/en-US/docs/Web/API/Node.appendChild) to insert at last position:
-
-``` javascript
-var child = element.appendChild(child);
-```
-
-[**insertBefore**](https://developer.mozilla.org/en-US/docs/Web/API/Node.insertBefore) to insert before an existing child:
-
-``` javascript
-var insertedElement = parentElement.insertBefore(newElement, referenceElement);
-```
-
----
-
-Tree Removal
-------------
-
-[**removeChild**](https://developer.mozilla.org/en-US/docs/Web/API/Node.removeChild) to remove an existing child:
-
-``` javascript
-var oldChild = element.removeChild(child);
-```
-
----
-
-Observable
-----------
-
-* addEventListener (attachEvent IE <= 8)
-
----
-
-Element API
------------
-
-* [innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element.innerHTML)
-* addClassName
-* style
-* getAttribute
-* ...
-
-
-</script></section>
-<section data-markdown data-separator="^\n---+\n---+\n$" data-vertical="^\n---+\n$" data-notes="^Note:" data-charset="utf-8"><script type="text/template">
 Css
 ===
+
+<!-- .slide: data-background="img/01/logo_css3.png" data-background-size="auto 70%" class="hide-title" -->
 
 ---
 
@@ -893,8 +897,34 @@ Shadows
 
 </script></section>
 <section data-markdown data-separator="^\n---+\n---+\n$" data-vertical="^\n---+\n$" data-notes="^Note:" data-charset="utf-8"><script type="text/template">
+### One might think this is love
+
+<!-- .slide: data-background="img/01/browsers-friends.jpg" data-background-size="auto 70%" -->
+
+<!-- .element: class="source" --> [image credits](http://uncyclopedia.wikia.com/wiki/UnBooks:Uncyclopedia's_Official_Guide_to_Choosing_a_Web_Browser)
+
+Note:
+There is standards, so one might think: "Cool, let's do this"
+
+---
+---
+
+### But reality is slightly different
+
+<!-- .slide: data-background="img/01/browser-at-war.jpg" -->
+
+<!-- .element: class="source" --> [image credits](http://www.ismartsoftware.com.au/the-wars-rise-again/)
+
+Note:
+But reality is a bit different...
+
+---
+---
+
 jQuery
 ======
+
+<!-- .slide: data-background="img/01/logo_jquery.png" data-background-size="auto 70%" class="hide-title" -->
 
 ---
 ---
