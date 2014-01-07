@@ -20,6 +20,21 @@
 @import "html_demo";
 
 .reveal {
+    // style for data-background
+    section[data-background] {
+        height: 100%;
+        width: 100%;
+        *.source {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+    }
+
+    .hide-title {
+        h1, h2, h3 {display: none;}
+    }
+
     // some utilities
     p.big {
         font-size: 1.4em;
