@@ -73,11 +73,11 @@ ById and ByTagname
 ------------------
 
 <br />
-<pre><code class="javascript runable">var elt = document.getElementById('getElementById');
+<pre><code class="javascript runnable">var elt = document.getElementById('getElementById');
 console.log(elt);
 </code></pre>
 <br />
-<pre><code class="javascript runable">var elements = document.getElementsByTagName('pre');
+<pre><code class="javascript runnable">var elements = document.getElementsByTagName('pre');
 console.log(elements);
 </code></pre>
 <br />
@@ -92,12 +92,12 @@ By css selector
 ---------------
 
 <br />
-<pre><code class="javascript runable">var element = document
+<pre><code class="javascript runnable">var element = document
         .querySelector('#querySelector pre');
 console.log(element);
 </code></pre>
 <br />
-<pre><code class="javascript runable">var elements = document
+<pre><code class="javascript runnable">var elements = document
         .querySelectorAll('#querySelector pre');
 console.log(elements);
 </code></pre>
@@ -127,7 +127,7 @@ Play with tree traversal
 
 <div class="two-columns">
 <div class="example" style="width:25%"><p>item 0</p><p>item 1</p><p>item 2</p><p>item 3</p><p>item 4</p></div>
-<pre style="width:71%"><code class="javascript runable">var element = document
+<pre style="width:71%"><code class="javascript runnable">var element = document
     .querySelector('#DOM-traversal .example');
 
 element.firstChild.style.color = "red";
@@ -238,8 +238,8 @@ Going further on Browser performances
 
 <iframe src="//player.vimeo.com/video/67050197" width="500" height="281"
 frameborder="0" webkitallowfullscreen mozallowfullscreen
-allowfullscreen></iframe> <p><a href="http://vimeo.com/67050197">Rendering
-without lumpy bits - Jake Archibald - Front-Trends 2013</a> from <a
-href="http://vimeo.com/fronttrends">Front-Trends</a> on <a
-href="https://vimeo.com">Vimeo</a>.</p>
+allowfullscreen></iframe>
+
+[Rendering without lumpy bits - Jake Archibald - Front-Trends 2013](http://vimeo.com/67050197)
+from [Front-Trends](http://vimeo.com/fronttrends)
 
