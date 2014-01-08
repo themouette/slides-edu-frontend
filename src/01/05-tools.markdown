@@ -1,13 +1,13 @@
 ### One might think this is love
 
-<!-- .slide: data-background="img/01/browsers-friends.jpg" data-background-size="auto 70%" -->
+<!-- .slide: data-background="img/01/browsers-ponies.png" data-background-size="100% auto" -->
 
 <br /><br />
 <br /><br />
 <br /><br />
 <br /><br />
 
-<!-- .element: class="source" --> [image credits](http://uncyclopedia.wikia.com/wiki/UnBooks:Uncyclopedia's_Official_Guide_to_Choosing_a_Web_Browser)
+<!-- .element: class="source" --> [image credits](http://paulirish.deviantart.com/art/My-Little-Browsers-307812128)
 
 Note:
 There is standards, so one might think: "Cool, let's do this"
