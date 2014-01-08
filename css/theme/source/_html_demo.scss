@@ -14,7 +14,8 @@
     }
 
     form {
-        margin-bottom: 50px;
+
+        padding: 20px 0;
 
         output[name="result"] {
             display: inline-block;
@@ -33,5 +34,10 @@
         &:valid {
             background-color: #aed679;
         }
+    }
+
+    &.html-forms {
+        form {margin: 0; padding: 0;}
+        pre code {font-size: 1em;}
     }
 }

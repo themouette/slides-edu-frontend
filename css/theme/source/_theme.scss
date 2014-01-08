@@ -21,6 +21,10 @@
 @import "html_demo";
 
 .reveal {
+    pre code {
+        font-size: 1.3em;
+        line-height: 1.5em;
+    }
     .no-transform {
         h2 {text-transform: none;}
     }

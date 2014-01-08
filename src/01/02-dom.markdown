@@ -24,15 +24,11 @@ From HTML to DOM
 <pre><code class="html">&lt;!DOCTYPE html>
 &lt;html>
     &lt;head>
-
-        &lt;meta charset="UTF-8">
-
+      &lt;meta charset="UTF-8">
     &lt;/head>
-
     &lt;body>
-
-        &lt;h1>Hello world !&lt;/h1>
-
+      &lt;h1>Hello world !&lt;/h1>
+      &lt;p>som content.&lt;/p>
     &lt;/body>
 &lt;/html>
 </code></pre>
@@ -77,8 +73,8 @@ ById and ByTagname
 ------------------
 
 <br />
-<pre><code class="javascript runable">var element = document.getElementById('getElementById');
-console.log(element);
+<pre><code class="javascript runable">var elt = document.getElementById('getElementById');
+console.log(elt);
 </code></pre>
 <br />
 <pre><code class="javascript runable">var elements = document.getElementsByTagName('pre');
@@ -96,11 +92,13 @@ By css selector
 ---------------
 
 <br />
-<pre><code class="javascript runable">var element = document.querySelector('#querySelector pre');
+<pre><code class="javascript runable">var element = document
+        .querySelector('#querySelector pre');
 console.log(element);
 </code></pre>
 <br />
-<pre><code class="javascript runable">var elements = document.querySelectorAll('#querySelector pre');
+<pre><code class="javascript runable">var elements = document
+        .querySelectorAll('#querySelector pre');
 console.log(elements);
 </code></pre>
 <br />
@@ -128,20 +126,18 @@ Play with tree traversal
 <br />
 
 <div class="two-columns">
-<div class="example" style="width:25%"><p>&lt;p>&lt;/p></p><p>&lt;p>&lt;/p></p><p>&lt;p>&lt;/p></p></div>
-<pre style="width:71%"><code class="javascript runable">var element = document.querySelector('#DOM-traversal .example');
+<div class="example" style="width:25%"><p>item 0</p><p>item 1</p><p>item 2</p><p>item 3</p><p>item 4</p></div>
+<pre style="width:71%"><code class="javascript runable">var element = document
+    .querySelector('#DOM-traversal .example');
 
 element.firstChild.style.color = "red";
-
-element.childNodes.item(1).style.border = "1px solid green";
-
+element.childNodes.item(1)
+        .style.border = "3px solid green";
 element.lastChild.style.background = "blue";
 </code></pre>
 </div>
 
 <br />
-
-<i class="fa fa-info-circle"></i> Open your browser console to see examples in action
 
 Note:
 childNodes is a [NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList)
@@ -184,19 +180,19 @@ EventTarget Interface
 [**addEventListener**](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget.addEventListener)
 
 ``` javascript
-element.addEventListener('eventname', callback[, useCapture]);
+e.addEventListener('name', callback[, useCapture]);
 ```
 
 [**removeEventListener**](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget.removeEventListener)
 
 ``` javascript
-element.removeEventListener('eventname', callback[, useCapture]);
+e.removeEventListener('name', callback[, useCapture]);
 ```
 
 [**dispatchEvent**](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget.dispatchEvent)
 
 ``` javascript
-element.dispatchEvent('eventname');
+element.dispatchEvent('name');
 ```
 
 <i class="fa fa-warning"></i> Prior to IE8 (IE <= 8), use `detachEvent` and `attachEvent`.
@@ -213,7 +209,7 @@ explanation. If not specified, useCapture defaults to false.
 
 ---
 
-Element API
+Common APIs
 -----------
 
 * [innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element.innerHTML)
@@ -226,6 +222,19 @@ Element API
 
 Going further on Browser rendering
 ----------------------------------
+
+Watch with subtitles:
+
+<iframe width="420" height="315"
+src="//www.youtube.com/embed/a2_6bGNZ7bA?rel=0&cc_load_policy=1"
+frameborder="0" allowfullscreen></iframe>
+
+And also [How Browsers Work by Tali Garsiel](http://taligarsiel.com/Projects/howbrowserswork1.htm)
+
+---
+
+Going further on Browser performances
+-------------------------------------
 
 <iframe src="//player.vimeo.com/video/67050197" width="500" height="281"
 frameborder="0" webkitallowfullscreen mozallowfullscreen

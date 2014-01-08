@@ -41,15 +41,12 @@ Sample
 ``` html
 <!doctype HTML>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
     </head>
 
     <body class="theme">
-
         <h1>Hello World</h1>
-
     </body>
 </html>
 ```
@@ -78,22 +75,26 @@ Document
 
 Here is a typical document.
 
-``` html
-<html lang="en">
+<div class="two-columns">
+<pre style="width:48%"><code class="html">&lt;html lang="en">
+    &lt;head>
+        &lt;meta charset="UTF-8">
+    &lt;/head>
 
-    <head>
-        <meta charset="UTF-8">
-    </head>
+    &lt;body>
+    &lt;/body>
+&lt;/html>
+</code></pre>
+<div  style="width:48%">
+<br />
+    <ul>
+        <li>`<html>` element **is the page**;</li>
+        <li>`<head>` is the page **metadata**;</li>
+        <li>`<body>` is the page **content**.</li>
+    </ul>
+</div>
+</div>
 
-    <body>
-    </body>
-
-</html>
-```
-
-* `<html>` element **is the page**.
-* `<head>` is the page **metadata**
-* `<body>` is the page **content**.
 
 ---
 
@@ -275,11 +276,11 @@ Lists
 
 <div class="three-columns">
 <pre class="fragment" data-fragment-index="1"><code class="html">&lt;ul>
-    &lt;li>lorem ipsum&lt;/li>
+    &lt;li>lorem&lt;/li>
 &lt;/ul>
 </code></pre>
 <pre class="fragment" data-fragment-index="2"><code class="html">&lt;ol>
-    &lt;li>lorem ipsum&lt;/li>
+    &lt;li>lorem&lt;/li>
 &lt;/ol>
 </code></pre>
 <pre class="fragment" data-fragment-index="3"><code class="html">&lt;dl>
@@ -294,7 +295,7 @@ Lists
 Forms
 -----
 
-<!-- .slide: class="html-demo" -->
+<!-- .slide: class="html-demo html-forms" -->
 
 > <form method="POST" action="/banana" enctype="multipart/form-data">
 >     <p>
@@ -313,19 +314,16 @@ Forms
 
 ``` html
 <form method="POST" action="/banana" enctype="multipart/form-data">
-    <p>
-        <label>Name: <input type="text" name="name" /></label>
-        <label>
-            Color: <input type="color" name="color" value="#D8DE26" />
-        </label>
-    </p>
-
-    <p>
-        <label for="color">Avatar:</label>
-        <span><input type="file" name="avatar" /></span>
-        <input type="button" value="Create" />
-    </p>
-
+  <p>
+    <label>Name: <input type="text" name="name" /></label>
+    <label>
+      Color: <input type="color" name="color" value="#D8DE26" />
+    </label>
+  </p>
+  <p>
+    <label>Avatar: <input type="file" name="avatar" /></label>
+    <input type="button" value="Create" />
+  </p>
 </form>
 ```
 
