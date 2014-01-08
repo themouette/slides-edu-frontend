@@ -24,6 +24,11 @@
 @import "dom-samples";
 
 .reveal {
+    .cover img {
+        border: none;
+        box-shadow: none;
+        margin: 50px auto;
+    }
     pre code {
         font-size: 1.3em;
         line-height: 1.5em;

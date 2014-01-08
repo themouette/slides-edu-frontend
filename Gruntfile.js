@@ -41,7 +41,7 @@ module.exports = function(grunt) {
                 styles: [ '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' ],
                 // Slidedeck title
                 // This is used as cover slide title and as html title.
-                title: 'Frontend',
+                title: 'Front-end',
                 // Description meta.
                 // default value is extracted from `package.json`
 //                description: '',
@@ -54,7 +54,7 @@ module.exports = function(grunt) {
                 // cover slide image url.
                 // This image is inserted between title and credits.
                 // example value 'img/jslogo.jpg'
-                cover: 'img/jslogo.jpg'
+                cover: 'img/frontend-logos.png'
             },
 
             lesson1: {
