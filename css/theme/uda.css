@@ -157,6 +157,7 @@ body {
   .cover .given-on:before {
     content: "Licence Professionnelle 2014"; }
 
+
 .speaker .headline {
   display: block;
   margin-bottom: 30px; }
@@ -198,10 +199,12 @@ body {
 .reveal .html-demo input.validate:valid, .html-demo input.validate:valid {
   background-color: #aed679; }
 
-.reveal section[data-background] {
+.reveal .no-transform h2 {
+  text-transform: none; }
+.reveal .slides > section[data-background] {
   height: 100%;
   width: 100%; }
-  .reveal section[data-background] *.source {
+  .reveal .slides > section[data-background] *.source {
     position: absolute;
     bottom: 10px;
     right: 10px; }
