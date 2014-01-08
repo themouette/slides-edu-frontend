@@ -188,7 +188,7 @@ body {
 .reveal .html-demo.lists .three-columns, .html-demo.lists .three-columns {
   margin-top: 50px; }
 .reveal .html-demo form, .html-demo form {
-  margin-bottom: 50px; }
+  padding: 20px 0; }
   .reveal .html-demo form output[name="result"], .html-demo form output[name="result"] {
     display: inline-block;
     width: 3em; }
@@ -198,7 +198,15 @@ body {
   background-color: red; }
 .reveal .html-demo input.validate:valid, .html-demo input.validate:valid {
   background-color: #aed679; }
+.reveal .html-demo.html-forms form, .html-demo.html-forms form {
+  margin: 0;
+  padding: 0; }
+.reveal .html-demo.html-forms pre code, .html-demo.html-forms pre code {
+  font-size: 1em; }
 
+.reveal pre code {
+  font-size: 1.3em;
+  line-height: 1.5em; }
 .reveal .no-transform h2 {
   text-transform: none; }
 .reveal .slides > section[data-background] {
