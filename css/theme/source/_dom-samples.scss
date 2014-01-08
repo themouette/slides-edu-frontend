@@ -1,0 +1,33 @@
+.reveal .dom-match {
+    .command {
+        input, button {
+            font-size: 2em;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+        input {
+            width: 70%;
+        }
+        button {
+            width: 30%;
+        }
+    }
+    .example {
+        margin: 1em 0;
+        border: 1px solid $mainColor;
+        text-align: left;
+        * * {
+            margin-left: 1em;
+            display:block;
+        }
+    }
+    .highlight {
+        color: red;
+    }
+}
+
+.reveal .two-columns .dom-match {
+    .example {
+        margin-top: 0;
+    }
+}
