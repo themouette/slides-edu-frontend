@@ -72,6 +72,10 @@
         <script src="reveal.js/js/reveal.min.js"></script>
 
         
+        <script src="scripts/runnable.js"></script>
+        
+        <script src="scripts/dom-samples.js"></script>
+        
 
         <script>
 
@@ -100,24 +104,6 @@
                     { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
                 ]
             });
-
-            function initRunnables() {
-                var runables = document.querySelectorAll('code.runable');
-                runables = Array.prototype.slice.call(runables);
-                runables.forEach(function (runable) {
-                    var pre = runable.parentElement;
-                    var btn = document.createElement('button');
-                    btn.innerHTML = 'Run';
-                    btn.className = 'runable-run';
-                    btn.addEventListener('click', function onRunnableClick(e) {
-                        eval(runable.innerHTML.replace(/<[^>]*>/g, ""));
-                        btn.blur();
-                    });
-                    pre.appendChild(btn);
-                });
-            }
-
-            setTimeout(initRunnables, 1000);
 
         </script>
 

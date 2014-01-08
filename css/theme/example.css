@@ -142,6 +142,16 @@ body {
   .reveal i.fa.big {
     font-size: 2em; }
 
+.reveal .runnable-run {
+  position: absolute;
+  right: 2px;
+  top: 2px; }
+
+.reveal .runnable-run {
+  position: absolute;
+  right: 2px;
+  top: 2px; }
+
 .cover .cover-img {
   display: block;
   height: 250px;
@@ -204,6 +214,27 @@ body {
 .reveal .html-demo.html-forms pre code, .html-demo.html-forms pre code {
   font-size: 1em; }
 
+.reveal .dom-match .command input, .reveal .dom-match .command button {
+  font-size: 2em;
+  display: inline-block;
+  box-sizing: border-box; }
+.reveal .dom-match .command input {
+  width: 70%; }
+.reveal .dom-match .command button {
+  width: 30%; }
+.reveal .dom-match .example {
+  margin: 1em 0;
+  border: 1px solid #a7a9ac;
+  text-align: left; }
+  .reveal .dom-match .example * * {
+    margin-left: 1em;
+    display: block; }
+.reveal .dom-match .highlight {
+  color: red; }
+
+.reveal .two-columns .dom-match .example {
+  margin-top: 0; }
+
 .reveal pre code {
   font-size: 1.3em;
   line-height: 1.5em; }
@@ -243,10 +274,6 @@ body {
 .reveal pre.red {
   box-shadow: 0 0 10px rgba(250, 0, 0, 0.6);
   border-left: 5px solid red; }
-.reveal .runable-run {
-  position: absolute;
-  right: 2px;
-  top: 2px; }
 .reveal blockquote p.source {
   display: block;
   text-align: right;

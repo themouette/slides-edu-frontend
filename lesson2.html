@@ -89,6 +89,7 @@ Environments
 * Extensions
 
 [A list of web browsers](http://web.appstorm.net/roundups/browsers/the-ultimate-list-of-browsers/)
+[Another](https://github.com/alrra/browser-logos#readme)
 
 </script></section>
             </div> <!-- End of .slides -->
@@ -98,6 +99,10 @@ Environments
         <script src="reveal.js/lib/js/head.min.js"></script>
         <script src="reveal.js/js/reveal.min.js"></script>
 
+        
+        <script src="scripts/runnable.js"></script>
+        
+        <script src="scripts/dom-samples.js"></script>
         
 
         <script>
@@ -127,24 +132,6 @@ Environments
                     { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
                 ]
             });
-
-            function initRunnables() {
-                var runables = document.querySelectorAll('code.runable');
-                runables = Array.prototype.slice.call(runables);
-                runables.forEach(function (runable) {
-                    var pre = runable.parentElement;
-                    var btn = document.createElement('button');
-                    btn.innerHTML = 'Run';
-                    btn.className = 'runable-run';
-                    btn.addEventListener('click', function onRunnableClick(e) {
-                        eval(runable.innerHTML.replace(/<[^>]*>/g, ""));
-                        btn.blur();
-                    });
-                    pre.appendChild(btn);
-                });
-            }
-
-            setTimeout(initRunnables, 1000);
 
         </script>
 
