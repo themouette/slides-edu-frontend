@@ -16,12 +16,16 @@
 @import "runnable";
 
 @import "cover";
+@import "dom_exemples";
 @import "speaker";
 @import "html_demo";
 
 .reveal {
+    .no-transform {
+        h2 {text-transform: none;}
+    }
     // style for data-background
-    section[data-background] {
+    .slides > section[data-background] {
         height: 100%;
         width: 100%;
         *.source {
