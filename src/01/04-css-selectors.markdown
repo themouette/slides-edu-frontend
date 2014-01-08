@@ -130,6 +130,8 @@ Position
         <li>:nth-child(3n+2)</li>
         <li>:nth-child(2)</li>
         <li>:nth-of-type(2)</li>
+        <li>:first-child</li>
+        <li>span:first-of-type</li>
     </ul>
 </div>
 
@@ -148,20 +150,9 @@ Position
 
 ---
 
-Box model
----------
+Going further
+-------------
 
-* position
-*
-
----
-
-Transitions
------------
-
----
-
-Shadows
--------
-
+* [CSS3 selector reference](http://www.w3.org/TR/css3-selectors/)
+* [Smashing magazine "taming CSS selector"](http://coding.smashingmagazine.com/2009/08/17/taming-advanced-css-selectors/)
 

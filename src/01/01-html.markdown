@@ -338,5 +338,7 @@ Links
 
 ``` html
 Find the slides on
-<a href="https://github.com/themouette/slides-edu-frontend">github</a>.
+<a href="https://github.com/themouette/slides-edu-frontend">
+    github
+</a>.
 ```
