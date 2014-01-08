@@ -21,6 +21,10 @@
             display:block;
         }
     }
+    .highlight > * {
+        color: $mainColor;
+    }
+
     .highlight {
         color: red;
     }
