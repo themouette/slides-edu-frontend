@@ -23,3 +23,4 @@ Environments
 * Extensions
 
 [A list of web browsers](http://web.appstorm.net/roundups/browsers/the-ultimate-list-of-browsers/)
+[Another](https://github.com/alrra/browser-logos#readme)
