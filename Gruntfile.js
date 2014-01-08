@@ -36,7 +36,7 @@ module.exports = function(grunt) {
                 // It remains possible to change it using the querystring.
                 theme: 'uda',
                 // An array of extra scripts to include.
-                scripts: [ 'scripts/runnable.js' ],
+                scripts: [ 'scripts/runnable.js', 'scripts/dom-samples.js' ],
                 // An array of extra stylesheets to include
                 styles: [ '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' ],
                 // Slidedeck title
