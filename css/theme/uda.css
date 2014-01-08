@@ -229,6 +229,8 @@ body {
   .reveal .dom-match .example * * {
     margin-left: 1em;
     display: block; }
+.reveal .dom-match .highlight > * {
+  color: #333333; }
 .reveal .dom-match .highlight {
   color: red; }
 
