@@ -88,9 +88,9 @@ Here is a typical document.
 <div  style="width:48%">
 <br />
     <ul>
-        <li>`<html>` element **is the page**;</li>
-        <li>`<head>` is the page **metadata**;</li>
-        <li>`<body>` is the page **content**.</li>
+        <li><span class="fragment highlight-current-green">`<html>`</span> element **is the page**;</li>
+        <li><span class="fragment highlight-current-green">`<head>`</span> is the page **metadata**;</li>
+        <li><span class="fragment highlight-current-green">`<body>`</span> is the page **content**.</li>
     </ul>
 </div>
 </div>
