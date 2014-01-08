@@ -8,8 +8,8 @@ Agenda
 
 * HTML
 * DOM
-* CSS
-* Preprocesseurs CSS
+* HTML5
+* CSS selectors
 * Dev Tools
 
 [Go](lesson1.html)
@@ -33,7 +33,7 @@ Agenda
 ---
 ---
 
-### Lesson #3: Common Patterns
+### Lesson #3: Async programming
 
 * Modules
 * Async programming
@@ -44,18 +44,28 @@ Agenda
 ---
 ---
 
-### Lesson #4: Cross browser and MV*
+### Lesson #4: Styling
 
-* jQuery
-* underscore
-* Backbone
+* CSS basics
+* CSS3
+* CSS preprocessors
 
 [Go](lesson4.html)
 
 ---
 ---
 
-### Lesson #5: Testing/Tools
+### Lesson #5: Cross browser and MV*
+
+* underscore
+* Backbone
+
+[Go](lesson5.html)
+
+---
+---
+
+### Lesson #6: Testing/Tools
 
 * Functional testing
 * Unit testing
@@ -65,4 +75,4 @@ Agenda
 * Grunt
 * npm - bower
 
-[Go](lesson5.html)
+[Go](lesson6.html)
