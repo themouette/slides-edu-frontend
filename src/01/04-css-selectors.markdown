@@ -16,43 +16,135 @@ Cascading StyleSheet
 TagName selector
 ----------------
 
-* `*`: match any node
-* `div`: match any **div** node
+<div class="two-columns">
+<div style="width: 30%">
+    <p>**Try this:**</p><br />
 
-<div class="two-columns dom-match">
-<div></div>
-<div class="example">
+    <ul>
+        <li>**`*`**</dd>
+        <li>**`div`**</li>
+        <li>**`div p`**</li>
+    </ul>
+</div>
+
+<div class="dom-match" style="width: 66%">
     <div>
         <p></p>
     </div>
     <p></p>
 </div>
+
 </div>
 
-<script>
-document.addEventListener('ready', function () {
-    document.querySelectorAll('.dom-match').forEach(function (elt) {
-        var DOM = elt.querySelector('example');
-        var interactive = document.Element();
-        var frag = document.createDocumentFragment();
-        frag.appendChild();
-    });
-});
-</script>
+---
+
+\#id
+---
+
+<div class="two-columns">
+<div style="width: 30%">
+    <p>**Try this:**</p><br />
+
+    <ul>
+        <li>**`#foo`**</dd>
+        <li>**`div#foo`**</li>
+        <li>**`p#foo`**</li>
+    </ul>
+</div>
+
+<div class="dom-match" style="width: 66%">
+    <div>
+        <p id="foo"></p>
+    </div>
+    <p></p>
+</div>
+
+</div>
 
 ---
 
-.class vs #id
--------------
+.classname
+----------
 
-Elements can be identified by unique #id
+<div class="two-columns">
+<div style="width: 30%">
+    <p>**Try this:**</p><br />
 
-An element can have multiple classes
+    <ul>
+        <li>**`.foo`**</dd>
+        <li>**`div.foo`**</li>
+        <li>**`p.foo`**</li>
+    </ul>
+</div>
+
+<div class="dom-match" style="width: 66%">
+    <div class="foo">
+        <p></p>
+    </div>
+    <p class="foo"></p>
+</div>
+
+</div>
 
 ---
 
-Selecting nodes
----------------
+[attr=value]
+------------
+
+<div class="two-columns">
+<div style="width: 30%">
+    <p>**Try this:**</p><br />
+
+    <ul>
+        <li>**[data-foo]**</dd>
+        <li>**[data-foo=bar]**</li>
+        <li>**[data-foo^=b]**</li>
+        <li>**[data-foo$=r]**</li>
+        <li>**[data-foo*=a]**</li>
+    </ul>
+</div>
+
+<div class="dom-match" style="width: 66%">
+    <div data-foo="foo">
+        <p data-foo="bar"></p>
+    </div>
+    <p>
+        <span data-foo="baz"></span>
+    </p>
+</div>
+
+</div>
+
+---
+
+Position
+--------
+
+<div class="two-columns">
+<div style="width: 30%">
+    <p>**Try this:**</p><br />
+
+    <ul>
+        <li>p:nth-child(0)</dd>
+        <li>:nth-child(odd)</li>
+        <li>:nth-child(3n+2)</li>
+        <li>:nth-child(2)</li>
+        <li>:nth-of-type(2)</li>
+    </ul>
+</div>
+
+<div class="dom-match" style="width: 66%">
+    <div>
+        <p></p>
+        <span></span>
+        <p></p>
+    </div>
+    <p>
+        <span></span>
+    </p>
+</div>
+
+</div>
 
 ---
 
