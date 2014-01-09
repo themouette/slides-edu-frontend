@@ -39,7 +39,7 @@ Sample
 ------
 
 ``` html
-<!doctype HTML>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -57,7 +57,7 @@ Doctype
 -------
 
 ``` html
-<!doctype HTML>
+<!DOCTYPE html>
 ```
 
 > A document type definition (DTD) is a set of markup declarations that define a
