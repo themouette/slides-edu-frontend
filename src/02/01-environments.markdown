@@ -1,6 +1,10 @@
 Environments
 ============
 
+<!-- .slide: data-background="img/02/multiple-devices.jpg" -->
+
+<!-- .element: class="source" --> [image credits](http://www.flickr.com/photos/brad_frost/7387824246/)
+
 ---
 
 ## Server
