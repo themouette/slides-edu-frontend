@@ -15,6 +15,8 @@ Document Object Model
 >
 > <!-- .element: class="source" --> [Wikipedia](http://en.wikipedia.org/wiki/Document_Object_Model)
 
+[What is the DOM](http://css-tricks.com/dom/) from [css-tricks](http://css-tricks.com)
+
 ---
 
 From HTML to DOM
@@ -73,16 +75,12 @@ ById and ByTagname
 ------------------
 
 <br />
-<pre><code class="javascript runnable">var elt = document.getElementById('getElementById');
-console.log(elt);
-</code></pre>
+<pre><code class="javascript runnable" data-runnable-output="console">document.getElementById('getElementById');</code></pre>
 <br />
-<pre><code class="javascript runnable">var elements = document.getElementsByTagName('pre');
-console.log(elements);
-</code></pre>
+<pre><code class="javascript runnable" data-runnable-output="console">document.getElementsByTagName('pre');</code></pre>
 <br />
 
-<i class="fa fa-info-circle"></i> Open your browser console to see examples in action
+<p class="alert info">Open your browser console to see examples in action.</p>
 
 ---
 
@@ -92,18 +90,12 @@ By css selector
 ---------------
 
 <br />
-<pre><code class="javascript runnable">var element = document
-        .querySelector('#querySelector pre');
-console.log(element);
-</code></pre>
+<pre><code class="javascript runnable" data-runnable-output="console">document.querySelector('#querySelector pre');</code></pre>
 <br />
-<pre><code class="javascript runnable">var elements = document
-        .querySelectorAll('#querySelector pre');
-console.log(elements);
-</code></pre>
+<pre><code class="javascript runnable" data-runnable-output="console">document.querySelectorAll('#querySelector pre');</code></pre>
 <br />
 
-<i class="fa fa-info-circle"></i> Open your browser console to see examples in action
+<p class="alert info">Open your browser console to see examples in action.</p>
 
 ---
 
@@ -147,11 +139,14 @@ childNodes is a [NodeList](https://developer.mozilla.org/en-US/docs/Web/API/Node
 Tree Insertion
 --------------
 
+<br />
+
 [**appendChild**](https://developer.mozilla.org/en-US/docs/Web/API/Node.appendChild) to insert at last position:
 
 ``` javascript
 var child = element.appendChild(child);
 ```
+<br />
 
 [**insertBefore**](https://developer.mozilla.org/en-US/docs/Web/API/Node.insertBefore) to insert before an existing child:
 
@@ -195,7 +190,7 @@ e.removeEventListener('name', callback[, useCapture]);
 element.dispatchEvent('name');
 ```
 
-<i class="fa fa-warning"></i> Prior to IE8 (IE <= 8), use `detachEvent` and `attachEvent`.
+<p class="alert warn">Prior to IE8 (IE <= 8), use `detachEvent` and `attachEvent`.</p>
 
 Note:
 useCapture:
