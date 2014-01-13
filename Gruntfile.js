@@ -68,7 +68,8 @@ module.exports = function(grunt) {
             },
             lesson2: {
                 options: {
-                    title: 'Javascript Language'
+                    title: 'Javascript Language',
+                    cover: 'img/jslogo.jpg'
                 },
                 files: [
                     {src: 'src/02/**/*.markdown', dest: 'lesson2.html'}
