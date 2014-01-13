@@ -15,6 +15,7 @@
 // <pre><code class="javascript runnable">// Type your code here</code></pre>
 // ```
 @import "runnable";
+@import "boxes";
 
 @import "cover";
 @import "dom_exemples";
@@ -82,6 +83,23 @@
     // override vertical behavior for code blocks
     .three-columns > pre {
         vertical-align: top;
+    }
+
+    // Create an inline list.
+    //
+    // <ul class="inline-list space-top">
+    // <li>64 bytes</li>
+    // <li>1 byte for sign</li>
+    // <li>11 bytes for dot position</li>
+    // </ul>
+    .inline-list {
+        margin: 20px 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            text-align: left;
+            padding-right: 20px;
+        }
     }
 
     pre.green {
