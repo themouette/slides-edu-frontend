@@ -152,6 +152,56 @@ body {
   right: 2px;
   top: 2px; }
 
+.reveal .icontext {
+  border: 1px solid transparent;
+  border-radius: 4px; }
+  .reveal .icontext:before {
+    font-family: 'FontAwesome';
+    margin-right: 10px; }
+.reveal .alert {
+  padding: 15px;
+  margin: 20px 0;
+  border: 1px solid transparent;
+  border-radius: 4px; }
+  .reveal .alert:before {
+    font-family: 'FontAwesome';
+    margin-right: 10px;
+    float: left; }
+.reveal .error {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1; }
+  .reveal .error:before {
+    content: "\f057"; }
+.reveal .fail {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1; }
+  .reveal .fail:before {
+    content: "\f165"; }
+.reveal .warn, .reveal .warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc; }
+  .reveal .warn:before, .reveal .warning:before {
+    content: "\f071"; }
+.reveal .success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6; }
+  .reveal .success:before {
+    content: "\f00c"; }
+.reveal .info, .reveal .tip, .reveal .information {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1; }
+  .reveal .info:before, .reveal .tip:before, .reveal .information:before {
+    content: "\f05a"; }
+.reveal .doc:before {
+  content: "\f02d"; }
+.reveal .article:before, .reveal .link:before {
+  content: "\f0c1"; }
+
 .cover .cover-img {
   display: block;
   height: 250px;
@@ -274,6 +324,13 @@ body {
   margin-right: 0%; }
 .reveal .three-columns > pre {
   vertical-align: top; }
+.reveal .inline-list {
+  margin: 20px 0;
+  padding: 0; }
+  .reveal .inline-list li {
+    display: inline-block;
+    text-align: left;
+    padding-right: 20px; }
 .reveal pre.green {
   box-shadow: 0 0 10px rgba(0, 250, 0, 0.6);
   border-left: 5px solid green; }
