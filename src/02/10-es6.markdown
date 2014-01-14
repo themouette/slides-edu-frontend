@@ -1,0 +1,203 @@
+# ES6 features
+
+---
+
+## References
+
+* [Current working draft](http://wiki.ecmascript.org/doku.php?id=harmony:specification_drafts#current_working_draft)
+* [ES6 serie on http://ariya.ofilabs.com](http://ariya.ofilabs.com/tag/es6)
+* [Available in firefox](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.7?redirectlocale=en-US&redirectslug=JavaScript%2FNew_in_JavaScript%2F1.7)
+* [Can I Use ?](http://caniuse.com/)
+
+---
+
+## Const & Let
+
+``` javascript
+const TWITTER_URL = "https://twitter.com/";
+
+for (var i = 0; i < 3; i++) {
+    let j = i * i;
+    console.log(j);
+}
+
+console.log(j); // will throw
+```
+
+<p class="alert">
+[let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) <!--.element: class="icontext doc" -->
+and
+[const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) <!--.element: class="icontext doc" -->
+references.
+</p>
+
+---
+
+## Default Argument
+
+``` javascript
+function runApp(appName = 'AUTOEXEC.BAT') {
+    console.log('Running', appName);
+}
+```
+
+[About default arguments](http://ariya.ofilabs.com/2013/02/es6-and-default-argument.html) <!--.element: class="icontext article" -->
+
+---
+
+## Destructuring assignement
+
+Array pattern
+
+``` javascript
+var m = 3, d = 14, y = 1977;
+var [m, d, y] = [3, 14, 1977];
+```
+
+Object pattern
+
+``` javascript
+function today() { return { d: 6, m: 2, y: 2013 }; }
+var { m: month, y: year } = today(); // month = 2, year = 2013
+```
+
+[About destructuring assignement](http://ariya.ofilabs.com/2013/02/es6-and-destructuring-assignment.html) <!--.element: class="icontext article" -->
+
+---
+
+## Iterators & Generators
+
+``` javascript
+function* fibonacci() {
+    let [prev, curr] = [0, 1];
+    for (;;) {
+        [prev, curr] = [curr, prev + curr];
+        yield curr;
+    }
+}
+```
+
+[About Generators](http://spion.github.io/posts/analysis-generators-and-other-async-patterns-node.html) <!--.element: class="icontext article" -->
+Also [Facebook Regenerator Library](http://facebook.github.io/regenerator/)
+
+---
+
+## Rest parameters
+
+Handle extra parameters
+
+``` javascript
+function addToStore(category, ...items) {
+    store[category] || store[category] = [];
+    items.forEach(function (item) {
+        store[category].push(item);
+    });
+}
+```
+
+[About Rest Parameters](http://ariya.ofilabs.com/2013/03/es6-and-rest-parameter.html) <!--.element: class="icontext article" -->
+
+---
+
+## Spread operators
+
+Append an array as parameters
+
+``` javascript
+var foo = ["cucomber", "zucchini", "tomatoes"];
+
+addToStore('vegetables', ...foo);
+```
+
+[About Spread Operators](http://ariya.ofilabs.com/2013/03/es6-and-spread-operator.html) <!--.element: class="icontext article" -->
+
+---
+
+## Arrow functions
+
+``` javascript
+```
+
+[About ]() <!--.element: class="icontext article" -->
+
+---
+
+## Proxy
+
+``` javascript
+var engineer = { name: 'Joe Sixpack', salary: 50 };
+
+var interceptor = {
+    set: function (receiver, property, value) {
+        console.log(property, 'is changed to', value);
+        receiver[property] = value;
+    }
+};
+
+engineer = Proxy(engineer, interceptor);
+```
+
+[About Proxy](http://ariya.ofilabs.com/2013/07/es6-and-proxy.html) <!--.element: class="icontext article" -->
+
+---
+
+## Modules
+
+[Go to dedicated slide](#/es6-modules)
+
+---
+
+## Class
+
+``` javascript
+```
+
+[About ]() <!--.element: class="icontext article" -->
+
+---
+
+## Promises
+
+``` javascript
+```
+
+
+[Promises on html5rocks](http://www.html5rocks.com/en/tutorials/es6/promises/) <!--.element: class="icontext article" -->
+
+---
+
+## Single Instruction Multiple Data
+
+``` javascript
+```
+
+[About ]() <!--.element: class="icontext article" -->
+
+---
+
+## Value objects
+
+``` javascript
+```
+
+[About ]() <!--.element: class="icontext article" -->
+
+---
+
+## Overloadbale operators
+
+``` javascript
+```
+
+[About ]() <!--.element: class="icontext article" -->
+
+---
+
+## Array Comprehension
+
+``` javascript
+[for (i of [1,4,2,3,-8]) if (i < 3) i];
+[1,4,2,3,-8].filter(function(i) { return i < 3 }); // [1, 2, -8]
+```
+
+[About Array Comprehension](http://ariya.ofilabs.com/2013/01/es6-and-array-comprehension.html) <!--.element: class="icontext article" -->

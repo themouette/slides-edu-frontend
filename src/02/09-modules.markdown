@@ -74,6 +74,8 @@ module.exports = (function () {
 
 ---
 
+<!-- .slide: id="es6-modules" -->
+
 ## ES6 modules
 
 Import module as a variable

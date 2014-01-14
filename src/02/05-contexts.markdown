@@ -46,6 +46,14 @@ console.log('outside foo is "%s"', foo);</code></pre>
 <pre class="fragment"><code class="javascript">test foo is "inside"
 outside foo is "inside"</code></pre>
 
+---
+
+## Hoisting
+
+
+<pre><code class="javascript runnable">console.log('foo' in ctx);
+var foo;
+</code></pre>
 
 
 ---
@@ -53,23 +61,23 @@ outside foo is "inside"</code></pre>
 <h2>Hoisting: variables</h2>
 
 <div class="two-columns">
-<pre><code class="javascript runnable">var foo = 1;
+<pre><code class="javascript runnable" data-runnable-output="jsonalert">var foo = 1;
 function bar() {
     if (!foo) {
         var foo = 10;
     }
-    alert(foo);
+    return foo;
 }
 bar();
 </code></pre>
-<pre class="fragment"><code class="javascript">// Is compiled into
+<pre class="fragment"><code class="javascript runnable">// Is compiled into
 var foo = 1;
 function bar() {
     var foo;
     if (!foo) {
         foo = 10;
     }
-    alert(foo);
+    return foo;
 }
 bar();</code></pre>
 
@@ -101,12 +109,11 @@ alert(a);
 <pre class="fragment"><code class="javascript">// Is compiled into
 var a = 1;
 function b() {
-    // declare a symbol locally
+    // declare a local symbol
     function a() {};
     a = 10;
     return;
 }
-
 b();
 alert(a);</code></pre>
 </div>
