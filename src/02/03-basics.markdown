@@ -5,9 +5,17 @@ Data type
 
 ## Undefined
 
+<pre><code class="javascript runnable" data-runnable-output="jsonalert">var foo;
+typeof foo;
+</code></pre>
+
 ---
 
 ## Null
+
+<pre><code class="javascript runnable" data-runnable-output="jsonalert">var foo = null;
+typeof foo;
+</code></pre>
 
 ---
 
@@ -114,7 +122,9 @@ b = a.concat([4, 5]);
 b.join(', ');
 </code></pre>
 
-<!-- .element: class="icontext doc" --> [Array Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+[Array Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) <!-- .element: class="icontext doc" -->
+and
+[Array extra (since "1.6")](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.6#Array_extras) <!-- .element: class="icontext doc" -->
 
 ---
 
@@ -172,6 +182,11 @@ console.log(cat);
 ---
 
 ## RegExp
+
+<pre><code class="javascript runnable" data-runnable-output="jsonalert">/^a\w+$/.test('abricot');</code></pre>
+<pre><code class="javascript runnable" data-runnable-output="jsonalert">"peach".match(/(\w+)a(\w+)$/);</code></pre>
+
+<!-- .element: class="icontext doc" --> [RegExp reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
 
 ---
 
