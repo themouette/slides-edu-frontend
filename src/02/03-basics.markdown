@@ -185,12 +185,15 @@ console.log(cat);
 
 <pre><code class="javascript runnable" data-runnable-output="jsonalert">/^a\w+$/.test('abricot');</code></pre>
 <pre><code class="javascript runnable" data-runnable-output="jsonalert">"peach".match(/(\w+)a(\w+)$/);</code></pre>
+<pre><code class="javascript runnable" data-runnable-output="jsonalert">(/^a\w+$/i).test('Abricot');</code></pre>
 
 <!-- .element: class="icontext doc" --> [RegExp reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
 
 ---
 
 ## Bonus: `typeof` and `instanceof`
+
+
 
 ---
 
@@ -230,7 +233,46 @@ a === "[object Object]"</code></pre>
 Control Flow
 ============
 
-if, while, for, for in, hasOwnProperty.
+---
+
+## throw
+
+`Error`, `EvalError`, `InternalError`, `RangeError`, `ReferenceError`, `StopIteration`, `SyntaxError`, `TypeError`, `URIError`
+
+---
+
+## if, else
+
+``` javascript
+if (typeof a === "undefined") {
+    // a is undefined
+} else if (a instanceof Number) {
+    // a is a Number
+} else {
+    throw new Error('Hey, you missed the contract !')
+}
+```
+
+---
+
+## in
+
+<pre><code class="javascript runnable" data-runnable-output="jsonalert">var obj = {
+    foo: null
+};
+
+"foo" in obj;
+</code></pre>
+
+<p class="alert tip">Used to check existance of a variable</p>
+
+---
+
+## while, do {} while
+
+---
+
+## for, for in, for of, hasOwnProperty.
 
 ---
 ---
