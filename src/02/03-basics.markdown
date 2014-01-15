@@ -1,3 +1,27 @@
+JSON
+====
+
+---
+
+## Example
+
+``` json
+{
+    "foo": "bar",
+    "baz": [ 1, true, null ],
+    "number": 1.23e4
+}
+```
+
+<p class="alert">
+[JSON Standard](http://www.json.org/) <!-- .element: class="icontext doc" -->
+and
+[JSONlint](http://jsonlint.com/) <!-- .element: class="icontext link" -->
+</p>
+
+---
+---
+
 Data type
 =========
 
