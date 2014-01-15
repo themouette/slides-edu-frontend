@@ -26,5 +26,8 @@ Environments
 * Websites
 * Extensions
 
-[A list of web browsers](http://web.appstorm.net/roundups/browsers/the-ultimate-list-of-browsers/)
-[Another](https://github.com/alrra/browser-logos#readme)
+<p class="alert">
+A [list of web browsers](http://web.appstorm.net/roundups/browsers/the-ultimate-list-of-browsers/) <!-- .element: class="icontext link" -->
+and
+[Another](https://github.com/alrra/browser-logos#readme) <!-- .element: class="icontext link" -->
+</p>
