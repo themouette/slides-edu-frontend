@@ -51,6 +51,12 @@ $.extend(User.prototype, {
 
 ---
 
+## Reference
+
+[Introduction to Object Oriented JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
+
+---
+
 ## Prototype is great
 
 * Multiple inheritance;
