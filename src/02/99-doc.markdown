@@ -34,3 +34,7 @@
 * [Functions explained](http://markdaggett.com/blog/2013/02/15/functions-explained/)
 * [Coding standards](http://markdaggett.com/blog/2013/02/15/pragmatic-javascript-style/)
 
+---
+---
+
+## [Back to index](index.html)
