@@ -92,16 +92,47 @@ Environments
 * Websites
 * Extensions
 
-[A list of web browsers](http://web.appstorm.net/roundups/browsers/the-ultimate-list-of-browsers/)
-[Another](https://github.com/alrra/browser-logos#readme)
+<p class="alert">
+A [list of web browsers](http://web.appstorm.net/roundups/browsers/the-ultimate-list-of-browsers/) <!-- .element: class="icontext link" -->
+and
+[Another](https://github.com/alrra/browser-logos#readme) <!-- .element: class="icontext link" -->
+</p>
 
 </script></section>
 <section data-markdown data-separator="^\n---+\n---+\n$" data-vertical="^\n---+\n$" data-notes="^Note:" data-charset="utf-8"><script type="text/template">
 History
 =======
 
-Appeared in 1995; 19 years ago
-Designed by Brendan Eich
+* Appeared in 1995
+* Designed by Brendan Eich at Netscape
+
+[More about
+JavaScriptstory](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript#Introduction)
+
+Note:
+
+Original name was LiveScript, but marketing decided otherwise.
+
+---
+
+## Versions
+
+<br />
+
+<table>
+<thead>
+<tr><th>JavaScript Version</th><th>ECMAScript Edition</th><th>Year</th></tr>
+</thead>
+<tbody>
+<tr><td>JavaScript 1.1</td><td>ECMAScript edition 1</td><td>1997</td></tr>
+<tr><td>JavaScript 1.5</td><td>ECMAScript edition 3</td><td>1999</td></tr>
+<tr><td>JavaScript 2.0</td><td>ECMAScript Harmony</td><td>Work in progress</td></tr>
+</tbody>
+</table>
+
+Note:
+There were milestones, but target is still 2.0.
+[Versions of JS in browsers](http://ejohn.org/blog/versions-of-javascript/)
 
 ---
 ---
@@ -117,12 +148,6 @@ JavaScript != Java
 
 </script></section>
 <section data-markdown data-separator="^\n---+\n---+\n$" data-vertical="^\n---+\n$" data-notes="^Note:" data-charset="utf-8"><script type="text/template">
-Basics
-======
-
----
----
-
 Data type
 =========
 
@@ -130,9 +155,23 @@ Data type
 
 ## Undefined
 
+<pre><code class="javascript runnable" data-runnable-output="jsonalert">var foo;
+typeof foo;
+</code></pre>
+
 ---
 
 ## Null
+
+<pre><code class="javascript runnable" data-runnable-output="jsonalert">var foo = null;
+typeof foo;
+</code></pre>
+
+---
+
+## Boolean
+
+[Boolean reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
 
 ---
 
@@ -152,6 +191,9 @@ Data type
 
 ## Limitations
 
+<pre><code class="javascript runnable" data-runnable-output="alert">0.1 + 0.2 == 0.30000000000000004</code></pre>
+<pre><code class="javascript runnable" data-runnable-output="alert">0.1 + 0.2 === 0.30000000000000004</code></pre>
+
 <ul>
 <li>**64 bytes** total;</li>
 <li>**1 byte** for sign;</li>
@@ -170,6 +212,8 @@ Data type
 <pre class="fragment"><code class="javascript runnable" data-runnable-output="alert">parseInt('123'); // 123</code></pre>
 <pre class="fragment"><code class="javascript runnable" data-runnable-output="alert">parseInt('7B', 16); // 123</code></pre>
 <pre class="fragment"><code class="javascript runnable" data-runnable-output="alert">parseInt('7B'); // 7</code></pre>
+
+<em class="fragment"><code class="javascript">parseInt("010")</code> returns 8 in pre-2013 browsers</em>.
 
 <p class="alert warn fragment">Always use a radix.</p>
 
@@ -239,7 +283,9 @@ b = a.concat([4, 5]);
 b.join(', ');
 </code></pre>
 
-<!-- .element: class="icontext doc" --> [Array Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+[Array Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) <!-- .element: class="icontext doc" -->
+and
+[Array extra (since "1.6")](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.6#Array_extras) <!-- .element: class="icontext doc" -->
 
 ---
 
@@ -298,9 +344,25 @@ console.log(cat);
 
 ## RegExp
 
+<pre><code class="javascript runnable" data-runnable-output="jsonalert">/^a\w+$/.test('abricot');</code></pre>
+<pre><code class="javascript runnable" data-runnable-output="jsonalert">"peach".match(/(\w+)a(\w+)$/);</code></pre>
+<pre><code class="javascript runnable" data-runnable-output="jsonalert">(/^a\w+$/i).test('Abricot');</code></pre>
+
+<!-- .element: class="icontext doc" --> [RegExp reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
+
+---
+
+## Date
+
+<!-- .element: class="icontext doc" --> [Date reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
+
 ---
 
 ## Bonus: `typeof` and `instanceof`
+
+
+[instanceof reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof)
+[typeof reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
 
 ---
 
@@ -337,18 +399,236 @@ a === "[object Object]"</code></pre>
 ---
 ---
 
+Operators
+=========
+
+---
+
+## Arithmetic Operators
+
+```
++, -, *, /, %, ++, --, unary -, unary +
+```
+
+<!-- .element: class="alert info" --> Arithmetic operators take numerical values (either literals or variables) as their operands and return a single numerical value.
+
+<!-- .element: class="icontext doc" --> [Reference](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Operators/Arithmetic_Operators)
+
+---
+
+## Assignment Operators
+
+```
+=, *=, /=, %=, +=, -=, <<=, >>=, >>>=, &=, ^=, |=
+```
+
+<!-- .element: class="alert info" --> An assignment operator assigns a value to its left operand based on the value of its right operand.
+
+<!-- .element: class="icontext doc" --> [Reference](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Operators/Assignment_Operators)
+
+---
+
+## Bitwise Operators
+
+```
+&, |, ^, ~, <<, >>, >>>
+```
+
+<!-- .element: class="alert info" --> Bitwise operators treat their operands as a set of 32 bits (zeros and ones) and return standard JavaScript numerical values.
+
+<!-- .element: class="icontext doc" --> [Reference](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Operators/Bitwise_Operators)
+
+---
+
+## Comparison Operators
+
+```
+==, !=, ===, !==, >, >=, <, <=
+```
+
+<!-- .element: class="alert info" --> A comparison operator compares its operands and returns a logical value based on whether the comparison is true.
+
+<!-- .element: class="icontext doc" --> [Reference](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Operators/Comparison_Operators)
+
+---
+
+## Logical Operators
+
+```
+&&, ||, !
+```
+
+<!-- .element: class="alert info" --> Logical operators are typically used with boolean (logical) values, and when they are, they return a boolean value.
+
+Examples:
+
+<pre><code class="javascript runnable" data-runnable-output="jsonalert">"foo" && 3;</code></pre>
+<pre><code class="javascript runnable" data-runnable-output="jsonalert">2 || 3;</code></pre>
+
+<!-- .element: class="icontext doc" --> [Reference](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Operators/Logical_Operators)
+
+
+---
+
+## String Operators
+
+```
++ and +=
+```
+
+<!-- .element: class="alert info" --> The string operators concatenate two string values together, returning another string that is the union of the two strings.
+
+<!-- .element: class="icontext doc" --> [Reference](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Operators/String_Operators)
+
+---
+---
+
 Control Flow
 ============
 
-if, while, for, for in, hasOwnProperty.
+<!-- .element: class="icontext doc" -->[All available statements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements)
 
 ---
+
+## if, else
+
+``` javascript
+if (typeof a === "undefined") {
+    // a is undefined
+} else if (a instanceof Number) {
+    // a is a Number
+} else {
+    throw new Error('Hey, you missed the contract !')
+}
+```
+
 ---
 
-APIs
-====
+## Switch
 
-File, Math
+``` javascript
+switch(action) {
+    case 'draw':
+        drawit();
+        break;
+    case 'eat':
+        eatit();
+        break;
+    default:
+        donothing();
+}
+```
+
+<p class="alert warning">Used for multiple branches based on a number or string</p>
+
+---
+
+## in
+
+<pre><code class="javascript runnable" data-runnable-output="jsonalert">var obj = {
+    foo: null
+};
+
+"foo" in obj;
+</code></pre>
+
+<p class="alert tip">Used to check existance of a variable</p>
+
+---
+
+## try, catch, finally, throw
+
+``` javascript
+try {
+  foo.bar();
+} catch (e) {
+  if (e instanceof EvalError) {
+    alert(e.name + ": " + e.message);
+  } else if (e instanceof RangeError) {
+    alert(e.name + ": " + e.message);
+  }
+} finally {
+    foo.baz();
+}
+```
+
+<!-- .element: class="icontext doc" --> [try...catch reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
+
+---
+
+# Error types
+
+All the following errors should be available:
+
+`Error`, `EvalError`, `RangeError`, `ReferenceError`, `SyntaxError`, `TypeError`, `URIError`
+
+<p class="icontext doc">[All errors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#Description)<p>
+
+---
+
+## while, do {} while
+
+<div class="two-columns">
+<pre><code class="javascript">var pancakes = [];
+function is_empty(stack) {
+    return !stack.length;
+}
+
+while (!is_empty(pancakes)) {
+    eat_one(pancakes);
+}
+</code></pre>
+<pre><code class="javascript">do {
+   i += 1;
+   document.write(i);
+} while (i < 5);
+</code></pre>
+</div>
+
+<span class="icontext doc">[do...while](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while)</span>
+and
+<span class="icontext doc"> [while reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)</span>
+
+---
+
+## for
+
+``` javascript
+for (var i = 0; i < 9; i++) {
+   n += i;
+   myfunc(n);
+}
+```
+
+---
+
+## for in
+
+Use `hasOwnProperty` to filter inherited properties:
+
+``` javascript
+for (var prop in obj) {
+
+    if( obj.hasOwnProperty( prop ) ) {
+        result += objName + "." + prop + " = " + obj[prop] + "\n";
+    }
+
+}
+```
+
+<p class="alert link">[for...in reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
+and
+[Why use hasOwnProperty](http://phrogz.net/death-to-hasownproperty)</p>
+
+Note:
+
+Problems occurs when Globals (Object, Array) are extended for instance.
+
+---
+
+## with
+
+<!-- .element: class="alert error" --> Do not use with.
 
 
 </script></section>
@@ -526,6 +806,14 @@ console.log('outside foo is "%s"', foo);</code></pre>
 <pre class="fragment"><code class="javascript">test foo is "inside"
 outside foo is "inside"</code></pre>
 
+---
+
+## Hoisting
+
+
+<pre><code class="javascript runnable">console.log('foo' in ctx);
+var foo;
+</code></pre>
 
 
 ---
@@ -533,23 +821,23 @@ outside foo is "inside"</code></pre>
 <h2>Hoisting: variables</h2>
 
 <div class="two-columns">
-<pre><code class="javascript runnable">var foo = 1;
+<pre><code class="javascript runnable" data-runnable-output="jsonalert">var foo = 1;
 function bar() {
     if (!foo) {
         var foo = 10;
     }
-    alert(foo);
+    return foo;
 }
 bar();
 </code></pre>
-<pre class="fragment"><code class="javascript">// Is compiled into
+<pre class="fragment"><code class="javascript runnable">// Is compiled into
 var foo = 1;
 function bar() {
     var foo;
     if (!foo) {
         foo = 10;
     }
-    alert(foo);
+    return foo;
 }
 bar();</code></pre>
 
@@ -581,12 +869,11 @@ alert(a);
 <pre class="fragment"><code class="javascript">// Is compiled into
 var a = 1;
 function b() {
-    // declare a symbol locally
+    // declare a local symbol
     function a() {};
     a = 10;
     return;
 }
-
 b();
 alert(a);</code></pre>
 </div>
@@ -830,6 +1117,12 @@ $.extend(User.prototype, {
 
 ---
 
+## Reference
+
+[Introduction to Object Oriented JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
+
+---
+
 ## Prototype is great
 
 * Multiple inheritance;
@@ -925,6 +1218,8 @@ module.exports = (function () {
 
 ---
 
+<!-- .slide: id="es6-modules" -->
+
 ## ES6 modules
 
 Import module as a variable
@@ -977,33 +1272,366 @@ export { sqrt, Point };
 
 </script></section>
 <section data-markdown data-separator="^\n---+\n---+\n$" data-vertical="^\n---+\n$" data-notes="^Note:" data-charset="utf-8"><script type="text/template">
-# Promises
+# ES6 features
 
 ---
 
-```
-var jsonPromise = new Promise(function(resolve, reject) {
-    // JSON.parse throws an error if you feed it some
-    // invalid JSON, so this implicitly rejects:
-    resolve(JSON.parse("This ain't JSON"));
-});
+## References
 
-jsonPromise.then(function(data) {
-    // This never happens:
-    console.log("It worked!", data);
-}).catch(function(err) {
-    // Instead, this happens:
-    console.log("It failed!", err);
-});
+* [Current working draft](http://wiki.ecmascript.org/doku.php?id=harmony:specification_drafts#current_working_draft)
+* [ES6 serie on http://ariya.ofilabs.com](http://ariya.ofilabs.com/tag/es6)
+* [Available in firefox](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.7?redirectlocale=en-US&redirectslug=JavaScript%2FNew_in_JavaScript%2F1.7)
+* [Can I Use ?](http://caniuse.com/)
+
+---
+
+## Const & Let
+
+``` javascript
+const TWITTER_URL = "https://twitter.com/";
+
+for (var i = 0; i < 3; i++) {
+    let j = i * i;
+    console.log(j);
+}
+
+console.log(j); // will throw
+```
+
+<p class="alert">
+[let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) <!--.element: class="icontext doc" -->
+and
+[const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) <!--.element: class="icontext doc" -->
+references.
+</p>
+
+---
+
+## Default Argument
+
+``` javascript
+function runApp(appName = 'AUTOEXEC.BAT') {
+    console.log('Running', appName);
+}
+```
+
+[About default arguments](http://ariya.ofilabs.com/2013/02/es6-and-default-argument.html) <!--.element: class="icontext article" -->
+
+---
+
+## Destructuring assignement
+
+Array pattern
+
+``` javascript
+var m = 3, d = 14, y = 1977;
+var [m, d, y] = [3, 14, 1977];
+```
+
+Object pattern
+
+``` javascript
+function today() { return { d: 6, m: 2, y: 2013 }; }
+var { m: month, y: year } = today(); // month = 2, year = 2013
+```
+
+[About destructuring assignement](http://ariya.ofilabs.com/2013/02/es6-and-destructuring-assignment.html) <!--.element: class="icontext article" -->
+
+---
+
+## Iterators & Generators
+
+``` javascript
+function* fibonacci() {
+    let [prev, curr] = [0, 1];
+    for (;;) {
+        [prev, curr] = [curr, prev + curr];
+        yield curr;
+    }
+}
+```
+
+[About Generators](http://spion.github.io/posts/analysis-generators-and-other-async-patterns-node.html) <!--.element: class="icontext article" -->
+Also [Facebook Regenerator Library](http://facebook.github.io/regenerator/)
+
+[for...of reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
+
+---
+
+## Rest parameters
+
+Handle extra parameters
+
+``` javascript
+function addToStore(category, ...items) {
+    store[category] || store[category] = [];
+    items.forEach(function (item) {
+        store[category].push(item);
+    });
+}
+```
+
+[About Rest Parameters](http://ariya.ofilabs.com/2013/03/es6-and-rest-parameter.html) <!--.element: class="icontext article" -->
+
+---
+
+## Spread operators
+
+Append an array as parameters
+
+``` javascript
+var foo = ["cucomber", "zucchini", "tomatoes"];
+
+addToStore('vegetables', ...foo);
+```
+
+[About Spread Operators](http://ariya.ofilabs.com/2013/03/es6-and-spread-operator.html) <!--.element: class="icontext article" -->
+
+---
+
+## Arrow functions
+
+``` javascript
+salaryList = employeeList.map(e => e.salary);
+```
+
+[About Arrow Functions](http://ariya.ofilabs.com/2013/02/es6-and-arrow-function.html) <!--.element: class="icontext article" -->
+
+
+---
+
+## Proxy
+
+``` javascript
+var engineer = { name: 'Joe Sixpack', salary: 50 };
+
+var interceptor = {
+    set: function (receiver, property, value) {
+        console.log(property, 'is changed to', value);
+        receiver[property] = value;
+    }
+};
+
+engineer = Proxy(engineer, interceptor);
+```
+
+[About Proxy](http://ariya.ofilabs.com/2013/07/es6-and-proxy.html) <!--.element: class="icontext article" -->
+
+---
+
+## Modules
+
+[Go to dedicated slide](#/es6-modules)
+
+---
+
+## Class
+
+``` javascript
+class Foo extends Bar {
+
+    myMethod() {
+    }
+
+}
+```
+
+[About ES6 classes](http://h3manth.com/content/classes-javascript-es6) <!--.element: class="icontext article" -->
+
+---
+
+## Promises
+
+More comming...
+
+[Promises on html5rocks](http://www.html5rocks.com/en/tutorials/es6/promises/) <!--.element: class="icontext article" -->
+
+---
+
+## Value objects
+
+<div class="two-columns">
+<div>
+<h3>ES5</h3>
+<pre><code class="javascript">function createWitch(name){
+    return {
+        type: 'Witch',
+        name: name
+    };
+}</code></pre>
+</div>
+<div>
+<h3>ES6</h3>
+<pre><code class="javascript">function createWitch(name){
+    return {
+        type: 'Witch',
+        name
+    };
+}
+</code></pre>
+</div>
+</div>
+
+[About object literal property value shorthand](http://ariya.ofilabs.com/2013/02/es6-and-object-literal-property-value-shorthand.html) <!--.element: class="icontext article" -->
+
+---
+
+## Array Comprehension
+
+``` javascript
+[for (i of [1,4,2,3,-8]) if (i < 3) i];
+[1,4,2,3,-8].filter(function(i) { return i < 3 }); // [1, 2, -8]
+```
+
+[About Array Comprehension](http://ariya.ofilabs.com/2013/01/es6-and-array-comprehension.html) <!--.element: class="icontext article" -->
+
+---
+
+## And also
+
+<p>
+<iframe width="560" height="315" src="//www.youtube.com/embed/IXIkTrq3Rgg?rel=0"
+frameborder="0" allowfullscreen></iframe>
+</p>
+
+* [Maps and sets](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects#Keyed_collections)
+* [Object.observe](http://wiki.ecmascript.org/doku.php?id=harmony:observe)
+* ...
+
+
+
+</script></section>
+<section data-markdown data-separator="^\n---+\n---+\n$" data-vertical="^\n---+\n$" data-notes="^Note:" data-charset="utf-8"><script type="text/template">
+# NPM
+
+<!-- .slide: data-background-image="img/02/npm.png" data-background-size="auto 30%" data-background-position="center 10%" class="hide-title" -->
+
+Manage server dependencies
+
+[npmjs.org](https://npmjs.org/) <!-- .element: class="icontext link" -->
+
+---
+
+## package.json
+
+```
+{
+ "name" : "foo"
+ , "version" : "1.2.3"
+ , "description" : "A packaged foo fooer for fooing foos"
+ , "main" : "foo.js"
+ , "man" : [ "./man/foo.1", "./man/bar.1" ]
+}
+```
+
+[package.json reference](https://npmjs.org/doc/files/package.json.html) <!-- .element: class="alert doc" -->
+
+---
+
+## Commands
+
+``` bash
+$ npm init
+
+$ npm install
+
+$ npm install --save-dev grunt@4.0.3
+
+$ npm install -g grunt-cli
+
+$ npm install --save express
+```
+
+[NPM documentation](https://npmjs.org/doc/) <!-- .element: class="icontext link" -->
+
+---
+---
+
+<!-- .slide: data-background-image="img/02/bower-logo.png" data-background-size="auto 70%" data-background-position="left center" -->
+
+# Bower
+
+Manage frontend assets
+
+[bower.io](http://bower.io/) <!-- .element: class="icontext link" -->
+
+---
+
+<!-- .slide: data-background-image="img/02/bower-logo.png" data-background-size="auto 70%" data-background-position="left center" -->
+
+## bower.json
+
+```
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "main": "path/to/main.css",
+  "ignore": [ ".jshintrc", "**/*.txt" ],
+  "dependencies": {
+    "<name>": "<version>",
+    "<name>": "<folder>",
+    "<name>": "<package>"
+  },
+  "devDependencies": {
+    "<test-framework-name>": "<version>"
+  }
+}
 ```
 
 ---
 
-##
+<!-- .slide: data-background-image="img/02/bower-logo.png" data-background-size="auto 70%" data-background-position="left center" -->
 
-[Promise specs](https://github.com/domenic/promises-unwrapping)
-[HTML5 Rocks about promises](http://www.html5rocks.com/en/tutorials/es6/promises/)
-[Promise pollyfill](https://github.com/jakearchibald/ES6-Promises)
+## Commands
+
+``` bash
+$ bower init
+
+$ bower install
+
+$ bower install --save-dev requirejs#2.x
+
+$ bower install --save jquery
+```
+
+---
+---
+
+<!-- .slide: data-background-image="img/02/yo-logo.png" data-background-size="auto 70%" data-background-position="right center" -->
+
+# Yo!
+
+Application scaffolding
+
+[Yo! on github](https://github.com/yeoman/yo) <!-- .element: class="icontext link" -->
+and
+[yeoman](http://yeoman.io) <!-- .element: class="icontext link" -->
+
+---
+---
+
+<!-- .slide: data-background-image="img/02/grunt-logo.png" data-background-size="auto 70%" data-background-position="left center" -->
+
+# Grunt
+
+Javascript task runner, based on JSON configuration.
+
+[gruntjs.com](http://gruntjs.com/) <!-- .element: class="icontext doc" -->
+
+---
+
+<!-- .slide: data-background-image="img/02/grunt-logo.png" data-background-size="auto 70%" data-background-position="left center" -->
+
+## Resources
+
+* [Getting started](http://gruntjs.com/getting-started)
+* [Your first GruntJS plugin](http://javascriptplayground.com/blog/2014/01/creating-your-first-grunt-plugin/)
+
+---
+
+## Glup
+
+[gulpjs.com](http://gulpjs.com/) is a stream based build system, favoring code over configuration.
 
 </script></section>
 <section data-markdown data-separator="^\n---+\n---+\n$" data-vertical="^\n---+\n$" data-notes="^Note:" data-charset="utf-8"><script type="text/template">

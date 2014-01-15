@@ -293,7 +293,8 @@ body {
   margin: 50px auto; }
 .reveal pre code {
   font-size: 1.3em;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  max-height: 600px; }
 .reveal .no-transform h2 {
   text-transform: none; }
 .reveal .slides > section[data-background] {
