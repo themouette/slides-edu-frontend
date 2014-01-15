@@ -19,6 +19,12 @@ typeof foo;
 
 ---
 
+## Boolean
+
+[Boolean reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+
+---
+
 ## Number
 
 ``` javascript
@@ -34,6 +40,9 @@ typeof foo;
 ---
 
 ## Limitations
+
+<pre><code class="javascript runnable" data-runnable-output="alert">0.1 + 0.2 == 0.30000000000000004</code></pre>
+<pre><code class="javascript runnable" data-runnable-output="alert">0.1 + 0.2 === 0.30000000000000004</code></pre>
 
 <ul>
 <li>**64 bytes** total;</li>
@@ -53,6 +62,8 @@ typeof foo;
 <pre class="fragment"><code class="javascript runnable" data-runnable-output="alert">parseInt('123'); // 123</code></pre>
 <pre class="fragment"><code class="javascript runnable" data-runnable-output="alert">parseInt('7B', 16); // 123</code></pre>
 <pre class="fragment"><code class="javascript runnable" data-runnable-output="alert">parseInt('7B'); // 7</code></pre>
+
+<em class="fragment"><code class="javascript">parseInt("010")</code> returns 8 in pre-2013 browsers</em>.
 
 <p class="alert warn fragment">Always use a radix.</p>
 
@@ -191,9 +202,17 @@ console.log(cat);
 
 ---
 
+## Date
+
+<!-- .element: class="icontext doc" --> [Date reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
+
+---
+
 ## Bonus: `typeof` and `instanceof`
 
 
+[instanceof reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof)
+[typeof reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
 
 ---
 
@@ -230,6 +249,90 @@ a === "[object Object]"</code></pre>
 ---
 ---
 
+Operators
+=========
+
+---
+
+## Arithmetic Operators
+
+```
++, -, *, /, %, ++, --, unary -, unary +
+```
+
+<!-- .element: class="alert info" --> Arithmetic operators take numerical values (either literals or variables) as their operands and return a single numerical value.
+
+<!-- .element: class="icontext doc" --> [Reference](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Operators/Arithmetic_Operators)
+
+---
+
+## Assignment Operators
+
+```
+=, *=, /=, %=, +=, -=, <<=, >>=, >>>=, &=, ^=, |=
+```
+
+<!-- .element: class="alert info" --> An assignment operator assigns a value to its left operand based on the value of its right operand.
+
+<!-- .element: class="icontext doc" --> [Reference](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Operators/Assignment_Operators)
+
+---
+
+## Bitwise Operators
+
+```
+&, |, ^, ~, <<, >>, >>>
+```
+
+<!-- .element: class="alert info" --> Bitwise operators treat their operands as a set of 32 bits (zeros and ones) and return standard JavaScript numerical values.
+
+<!-- .element: class="icontext doc" --> [Reference](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Operators/Bitwise_Operators)
+
+---
+
+## Comparison Operators
+
+```
+==, !=, ===, !==, >, >=, <, <=
+```
+
+<!-- .element: class="alert info" --> A comparison operator compares its operands and returns a logical value based on whether the comparison is true.
+
+<!-- .element: class="icontext doc" --> [Reference](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Operators/Comparison_Operators)
+
+---
+
+## Logical Operators
+
+```
+&&, ||, !
+```
+
+<!-- .element: class="alert info" --> Logical operators are typically used with boolean (logical) values, and when they are, they return a boolean value.
+
+Examples:
+
+<pre><code class="javascript runnable" data-runnable-output="jsonalert">"foo" && 3;</code></pre>
+<pre><code class="javascript runnable" data-runnable-output="jsonalert">2 || 3;</code></pre>
+
+<!-- .element: class="icontext doc" --> [Reference](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Operators/Logical_Operators)
+
+
+---
+
+## String Operators
+
+```
++ and +=
+```
+
+<!-- .element: class="alert info" --> The string operators concatenate two string values together, returning another string that is the union of the two strings.
+
+<!-- .element: class="icontext doc" --> [Reference](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Operators/String_Operators)
+
+---
+---
+
 Control Flow
 ============
 
@@ -248,6 +351,25 @@ if (typeof a === "undefined") {
     throw new Error('Hey, you missed the contract !')
 }
 ```
+
+---
+
+## Switch
+
+``` javascript
+switch(action) {
+    case 'draw':
+        drawit();
+        break;
+    case 'eat':
+        eatit();
+        break;
+    default:
+        donothing();
+}
+```
+
+<p class="alert warning">Used for multiple branches based on a number or string</p>
 
 ---
 
