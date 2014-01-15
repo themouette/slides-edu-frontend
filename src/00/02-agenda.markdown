@@ -19,14 +19,28 @@ Agenda
 
 ### Lesson #2: JavaScript Language
 
-* Environments
-* language structure
-* JSON
-* Coding standards
-* variables and contexts
-* closures
-* invocation pattern
-* object model
+<div class="two-columns">
+<div>
+<ul>
+    <li>Environments</li>
+    <li>JSON</li>
+    <li>variables and contexts</li>
+    <li>language structure</li>
+    <li>Coding standards</li>
+    <li>closures</li>
+</ul>
+</div>
+<div>
+<ul>
+    <li>invocation pattern</li>
+    <li>object model</li>
+    <li>Modules</li>
+    <li>ES6</li>
+    <li>npm - bower - yo!</li>
+    <li>Grunt</li>
+</ul>
+</div>
+</div>
 
 [Go](lesson2.html)
 
@@ -35,7 +49,6 @@ Agenda
 
 ### Lesson #3: Async programming
 
-* Modules
 * Async programming
 * Functional programming
 
@@ -72,7 +85,5 @@ Agenda
 * Mocking
 * Linter
 * Minify
-* Grunt
-* npm - bower
 
 [Go](lesson6.html)
