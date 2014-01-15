@@ -233,11 +233,7 @@ a === "[object Object]"</code></pre>
 Control Flow
 ============
 
----
-
-## throw
-
-`Error`, `EvalError`, `InternalError`, `RangeError`, `ReferenceError`, `StopIteration`, `SyntaxError`, `TypeError`, `URIError`
+<!-- .element: class="icontext doc" -->[All available statements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements)
 
 ---
 
@@ -268,17 +264,97 @@ if (typeof a === "undefined") {
 
 ---
 
+## try, catch, finally, throw
+
+``` javascript
+try {
+  foo.bar();
+} catch (e) {
+  if (e instanceof EvalError) {
+    alert(e.name + ": " + e.message);
+  } else if (e instanceof RangeError) {
+    alert(e.name + ": " + e.message);
+  }
+} finally {
+    foo.baz();
+}
+```
+
+<!-- .element: class="icontext doc" --> [try...catch reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
+
+---
+
+# Error types
+
+All the following errors should be available:
+
+`Error`, `EvalError`, `RangeError`, `ReferenceError`, `SyntaxError`, `TypeError`, `URIError`
+
+<p class="icontext doc">[All errors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#Description)<p>
+
+---
+
 ## while, do {} while
 
+<div class="two-columns">
+<pre><code class="javascript">var pancakes = [];
+function is_empty(stack) {
+    return !stack.length;
+}
+
+while (!is_empty(pancakes)) {
+    eat_one(pancakes);
+}
+</code></pre>
+<pre><code class="javascript">do {
+   i += 1;
+   document.write(i);
+} while (i < 5);
+</code></pre>
+</div>
+
+<span class="icontext doc">[do...while](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while)</span>
+and
+<span class="icontext doc"> [while reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)</span>
+
 ---
 
-## for, for in, for of, hasOwnProperty.
+## for
+
+``` javascript
+for (var i = 0; i < 9; i++) {
+   n += i;
+   myfunc(n);
+}
+```
 
 ---
+
+## for in
+
+Use `hasOwnProperty` to filter inherited properties:
+
+``` javascript
+for (var prop in obj) {
+
+    if( obj.hasOwnProperty( prop ) ) {
+        result += objName + "." + prop + " = " + obj[prop] + "\n";
+    }
+
+}
+```
+
+<p class="alert link">[for...in reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
+and
+[Why use hasOwnProperty](http://phrogz.net/death-to-hasownproperty)</p>
+
+Note:
+
+Problems occurs when Globals (Object, Array) are extended for instance.
+
 ---
 
-APIs
-====
+## with
 
-File, Math
+<!-- .element: class="alert error" --> Do not use with.
 

@@ -80,6 +80,8 @@ function* fibonacci() {
 [About Generators](http://spion.github.io/posts/analysis-generators-and-other-async-patterns-node.html) <!--.element: class="icontext article" -->
 Also [Facebook Regenerator Library](http://facebook.github.io/regenerator/)
 
+[for...of reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
+
 ---
 
 ## Rest parameters
@@ -116,9 +118,11 @@ addToStore('vegetables', ...foo);
 ## Arrow functions
 
 ``` javascript
+salaryList = employeeList.map(e => e.salary);
 ```
 
-[About ]() <!--.element: class="icontext article" -->
+[About Arrow Functions](http://ariya.ofilabs.com/2013/02/es6-and-arrow-function.html) <!--.element: class="icontext article" -->
+
 
 ---
 
@@ -150,46 +154,51 @@ engineer = Proxy(engineer, interceptor);
 ## Class
 
 ``` javascript
+class Foo extends Bar {
+
+    myMethod() {
+    }
+
+}
 ```
 
-[About ]() <!--.element: class="icontext article" -->
+[About ES6 classes](http://h3manth.com/content/classes-javascript-es6) <!--.element: class="icontext article" -->
 
 ---
 
 ## Promises
 
-``` javascript
-```
-
+More comming...
 
 [Promises on html5rocks](http://www.html5rocks.com/en/tutorials/es6/promises/) <!--.element: class="icontext article" -->
 
 ---
 
-## Single Instruction Multiple Data
-
-``` javascript
-```
-
-[About ]() <!--.element: class="icontext article" -->
-
----
-
 ## Value objects
 
-``` javascript
-```
+<div class="two-columns">
+<div>
+<h3>ES5</h3>
+<pre><code class="javascript">function createWitch(name){
+    return {
+        type: 'Witch',
+        name: name
+    };
+}</code></pre>
+</div>
+<div>
+<h3>ES6</h3>
+<pre><code class="javascript">function createWitch(name){
+    return {
+        type: 'Witch',
+        name
+    };
+}
+</code></pre>
+</div>
+</div>
 
-[About ]() <!--.element: class="icontext article" -->
-
----
-
-## Overloadbale operators
-
-``` javascript
-```
-
-[About ]() <!--.element: class="icontext article" -->
+[About object literal property value shorthand](http://ariya.ofilabs.com/2013/02/es6-and-object-literal-property-value-shorthand.html) <!--.element: class="icontext article" -->
 
 ---
 
@@ -201,3 +210,18 @@ engineer = Proxy(engineer, interceptor);
 ```
 
 [About Array Comprehension](http://ariya.ofilabs.com/2013/01/es6-and-array-comprehension.html) <!--.element: class="icontext article" -->
+
+---
+
+## And also
+
+<p>
+<iframe width="560" height="315" src="//www.youtube.com/embed/IXIkTrq3Rgg?rel=0"
+frameborder="0" allowfullscreen></iframe>
+</p>
+
+* [Maps and sets](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects#Keyed_collections)
+* [Object.observe](http://wiki.ecmascript.org/doku.php?id=harmony:observe)
+* ...
+
+
