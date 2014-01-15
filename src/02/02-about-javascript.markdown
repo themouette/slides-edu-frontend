@@ -1,8 +1,15 @@
 History
 =======
 
-* Appeared in 1995; 19 years ago
-* Designed by Brendan Eich
+* Appeared in 1995
+* Designed by Brendan Eich at Netscape
+
+[More about
+JavaScriptstory](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript#Introduction)
+
+Note:
+
+Original name was LiveScript, but marketing decided otherwise.
 
 ---
 
