@@ -38,7 +38,8 @@ module.exports = function(grunt) {
                 // An array of extra scripts to include.
                 scripts: [ 'scripts/runnable.js', 'scripts/dom-samples.js' ],
                 // An array of extra stylesheets to include
-                styles: [ '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' ],
+                // styles: [ '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' ],
+                styles: [ 'font-awesome/css/font-awesome.css' ],
                 // Slidedeck title
                 // This is used as cover slide title and as html title.
                 title: 'Front-end',
