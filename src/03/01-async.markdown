@@ -269,9 +269,19 @@ And
 CORS
 ----
 
-![](img/03/cors_flow.png)
+![](img/03/cors.png)
 
-[source](http://www.html5rocks.com/en/tutorials/cors/#toc-adding-cors-support-to-the-server)
+<p class="fragment alert info">
+Requested endpoint should accept<br />
+Browser refuse to send data otherwise
+</p>
+
+
+Note:
+si qq1 veux utiliser un browser pour usurper l'identité, il doit le faire depuis
+ton domaine, sinon le site browser refuse.
+
+ca garantit que pour attaquer tes données, il faut attaquer ton site (XSS).
 
 ---
 
@@ -291,6 +301,15 @@ CORS
     ```
 
 3. Browser sends request if authorized
+
+---
+
+CORS
+----
+
+![](img/03/cors_flow.png)
+
+[source](http://www.html5rocks.com/en/tutorials/cors/#toc-adding-cors-support-to-the-server)
 
 ---
 
@@ -314,25 +333,6 @@ if ("withCredentials" in xhr) {
 // send cookies ?
 xhr.withCredentials = true;
 ```
-
----
-
-CORS
-----
-
-![](img/03/cors.png)
-
-<p class="fragment alert info">
-Requested endpoint should accept<br />
-Browser refuse to send data otherwise
-</p>
-
-
-Note:
-si qq1 veux utiliser un browser pour usurper l'identité, il doit le faire depuis
-ton domaine, sinon le site browser refuse.
-
-ca garantit que pour attaquer tes données, il faut attaquer ton site (XSS).
 
 ---
 
