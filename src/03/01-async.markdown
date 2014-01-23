@@ -269,6 +269,15 @@ And
 CORS
 ----
 
+![](img/03/cors_flow.png)
+
+[source](http://www.html5rocks.com/en/tutorials/cors/#toc-adding-cors-support-to-the-server)
+
+---
+
+CORS
+----
+
 1. Browser sends an `OPTION` request with **Origin** header
 
     ```
@@ -282,15 +291,6 @@ CORS
     ```
 
 3. Browser sends request if authorized
-
----
-
-CORS
-----
-
-![](img/03/cors_flow.png)
-
-[source](http://www.html5rocks.com/en/tutorials/cors/#toc-adding-cors-support-to-the-server)
 
 ---
 
