@@ -69,7 +69,7 @@ Asynchronous programming
 
 ---
 
-![Don't call us, we'll call you](img/03/dontcallus.png)
+![Don't call us, we'll call you](img/03/dontcallus.png "Hollywood principle")
 
 ---
 
@@ -274,16 +274,22 @@ XMLHttpRequest / Ajax
 Same-origin policy
 ------------------
 
-For user security, browser runs in a sandbox based on url: <!-- .element: class="alert" -->
+For user security, browser runs in a **sandbox** based on same: <!-- .element: class="alert" -->
 
-* protocol
-* domain
-* port
+<ul class="inline-list">
+    <li class="fragment" data-fragment-index="1" style="color:red">protocol</li>
+    <li class="fragment" data-fragment-index="2" style="color:green">domain</li>
+    <li class="fragment" data-fragment-index="3" style="color:blue">port</li>
+</ul>
 
-<p class="alert">
+<span class="fragment" data-fragment-index="1"><span style="color:red">http</span>://</span>
+<span class="fragment" data-fragment-index="2"><span style="color:green">yourdomain.ext</span></span>
+<span class="fragment" data-fragment-index="3">:<span style="color:blue">3000</span></span>
+
+<p class="alert"><strong>
 Applies to XMLHttpRequest, DOM, and
 [others](https://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy)...
-</p>
+</strong></p>
 
 <p class="alert">
 [Wikipedia on SOP](http://en.wikipedia.org/wiki/Same-origin_policy) <!-- .element: class="icontext doc" -->
@@ -325,6 +331,7 @@ CORS
 > bypassing the **Same-origin policy**
 
 <p class="alert">
+[W3C on CORS](http://www.w3.org/TR/cors/) <!-- .element: class="icontext doc" -->,
 [Wikipedia on CORS](http://en.wikipedia.org/wiki/Cross-Origin_Resource_Sharing) <!-- .element: class="icontext doc" -->
 And
 [HTML5rocks](http://www.html5rocks.com/en/tutorials/cors/) <!-- .element: class="icontext doc" -->
@@ -354,7 +361,7 @@ ca garantit que pour attaquer tes données, il faut attaquer ton site (XSS).
 CORS
 ----
 
-1. Browser sends an `OPTION` request with **Origin** header
+1. Browser sends an `OPTIONS` request with **Origin** header
 
     ```
     Origin: http://www.example-social-network.com
@@ -363,10 +370,12 @@ CORS
 2. Server return authorization in response header
 
     ```
+    Access-Control-Allow-Origin: http://www.example-social-network.com
     Access-Control-Allow-Credentials: true
     ```
 
 3. Browser sends request if authorized
+
 
 ---
 
@@ -433,9 +442,9 @@ Functional Programming
 Definition
 ----------
 
-http://stackoverflow.com/a/8357604
-
-http://linusnorton.github.io/posts/refactor-to-functional/
+* Dr Yannick Loiseau [on Functional programming](http://yloiseau.net/articles/functionnal/)
+* [Definition on Stack Overflow](http://stackoverflow.com/a/8357604)
+* [Refactor to functional](http://linusnorton.github.io/posts/refactor-to-functional/) by Linus Norton
 
 ---
 
@@ -446,7 +455,7 @@ Pure functions have the following attributes:
 
 * The only observable output is the return value.
 * The only output dependency is the arguments.
-* Arguments are fully determined before any output is generated.
+* Arguments are fully determined **before** any output is generated.
 
 ---
 
@@ -465,44 +474,118 @@ Array
 
 ---
 
-Array.Map
----
+<!-- .slide: class="no-transform" -->
 
----
-
-Array.Reduce
----
-
----
-
-Array.Filter
-------
-
----
-
-Array.ForEach
+Array.forEach(callback[, thisArg]);
 -------
 
+<br />
+<pre><code class="javascript runnable" data-runnable-output="jsonalert">[1, 2, 3]
+  .forEach(function (value, key) {
+    return value + key;
+  });</code></pre>
+
+<p class="alert">
+<span class="icontext doc">[Reference on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)</span>
+</p>
+
+
 ---
 
-Pluck
------
+<!-- .slide: class="no-transform" -->
+
+Array.map(callback[, thisArg])
+---
+
+<br />
+<pre><code class="javascript runnable" data-runnable-output="jsonalert">[1, 2, 3]
+  .map(function (value, key) {
+    return value + key;
+  });</code></pre>
+
+<p class="alert">
+<span class="icontext doc">[Reference on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)</span>
+</p>
 
 ---
 
-Partial Application (currying)
+<!-- .slide: class="no-transform" -->
+
+Array.reduce(callback,[initialValue])
 ---
+
+<br />
+<pre><code class="javascript runnable" data-runnable-output="jsonalert">[1, 2, 3]
+  .reduce(function add(accumulator, value, index) {
+    return accumulator + value;
+  }, 0);</code></pre>
+
+<p class="alert">
+<span class="icontext doc">[Reference on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)</span>
+</p>
+
+---
+
+<!-- .slide: class="no-transform" -->
+
+Array.filter(callback[, thisArg])
+------
+
+<br />
+<pre><code class="javascript runnable" data-runnable-output="jsonalert">[1, 2, 3]
+  .filter(function odd(value) {
+    return value % 2;
+  });</code></pre>
+
+<p class="alert">
+<span class="icontext doc">[Reference on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)</span>
+</p>
+
+
+---
+
+Useful patterns
+----
+
+---
+
+Partial Application
+---
+
+<pre><code class="javascript runnable" data-runnable-output="jsonalert">function greet(name, message) {
+    return [message, " ", name, '!'].join("");
+}
+var hello = function (name) {
+    return greet(name, "Hello");
+}
+
+hello("Foo");
+</code></pre>
+
 
 ---
 
 Compose
 ---
 
+<pre><code class="javascript">function userToName(user) {
+    return user.name || "John Doe";
+}
+
+var helloUser = compose(greet, userToName);
+
+// same as
+function (user) {
+    return greet( userToName( user ) );
+}
+</code></pre>
+
+
 ---
 
 Resources:
 
-* http://linusnorton.github.io/posts/refactor-to-functional/
+* http://lodash.com/
 * http://underscorejs.org/
 
 
@@ -511,6 +594,32 @@ Resources:
 # Promises
 
 ---
+
+
+## Promise?
+
+* [Promises](http://wiki.commonjs.org/wiki/Promises) are CommonJS spec (/A, /B, /C, /D) ;
+* [Promises](http://www.html5rocks.com/en/tutorials/es6/promises/#toc-api) are ES6spec ;
+* Functional approach for asynchronous ;
+* A single API for every asynchronous processes ;
+* Avoid pyramid of doom.
+
+---
+
+## Easy async
+
+```
+var user = getUser();
+user
+    .then(hydrateFriends)
+    .then(orderByTopFriend)
+    .then(askUserToValidate)
+    .then(saveBFF);
+```
+
+---
+
+## ES6
 
 ```
 var jsonPromise = new Promise(function(resolve, reject) {
@@ -530,11 +639,31 @@ jsonPromise.then(function(data) {
 
 ---
 
-##
+<!-- .slide: class="no-transform" -->
 
-[Promise specs](https://github.com/domenic/promises-unwrapping)
-[HTML5 Rocks about promises](http://www.html5rocks.com/en/tutorials/es6/promises/)
-[Promise pollyfill](https://github.com/jakearchibald/ES6-Promises)
+Promise.all
+-----------
+
+Make a promise that fulfills when every item in the array fulfills.
+
+``` javascript
+var loading = document.getElementById('loading')
+loading.className = "visible";
+
+var p = Promise.all([users, events, friends]);
+
+p.then(function (users, events, friends) {
+    loading.className = "hidden";
+});
+```
+
+---
+
+## Resources
+
+* [Promise specs](https://github.com/domenic/promises-unwrapping)
+* [HTML5 Rocks about promises](http://www.html5rocks.com/en/tutorials/es6/promises/)
+* [Promise pollyfill](https://github.com/jakearchibald/ES6-Promises)
 
 </script></section>
 <section data-markdown data-separator="^\n---+\n---+\n$" data-vertical="^\n---+\n$" data-notes="^Note:" data-charset="utf-8"><script type="text/template">
