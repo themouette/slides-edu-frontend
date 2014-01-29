@@ -3,7 +3,7 @@ Asynchronous programming
 
 ---
 
-![Don't call us, we'll call you](img/03/dontcallus.png)
+![Don't call us, we'll call you](img/03/dontcallus.png "Hollywood principle")
 
 ---
 
@@ -208,16 +208,22 @@ XMLHttpRequest / Ajax
 Same-origin policy
 ------------------
 
-For user security, browser runs in a sandbox based on url: <!-- .element: class="alert" -->
+For user security, browser runs in a **sandbox** based on same: <!-- .element: class="alert" -->
 
-* protocol
-* domain
-* port
+<ul class="inline-list">
+    <li class="fragment" data-fragment-index="1" style="color:red">protocol</li>
+    <li class="fragment" data-fragment-index="2" style="color:green">domain</li>
+    <li class="fragment" data-fragment-index="3" style="color:blue">port</li>
+</ul>
 
-<p class="alert">
+<span class="fragment" data-fragment-index="1"><span style="color:red">http</span>://</span>
+<span class="fragment" data-fragment-index="2"><span style="color:green">yourdomain.ext</span></span>
+<span class="fragment" data-fragment-index="3">:<span style="color:blue">3000</span></span>
+
+<p class="alert"><strong>
 Applies to XMLHttpRequest, DOM, and
 [others](https://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy)...
-</p>
+</strong></p>
 
 <p class="alert">
 [Wikipedia on SOP](http://en.wikipedia.org/wiki/Same-origin_policy) <!-- .element: class="icontext doc" -->
@@ -259,6 +265,7 @@ CORS
 > bypassing the **Same-origin policy**
 
 <p class="alert">
+[W3C on CORS](http://www.w3.org/TR/cors/) <!-- .element: class="icontext doc" -->,
 [Wikipedia on CORS](http://en.wikipedia.org/wiki/Cross-Origin_Resource_Sharing) <!-- .element: class="icontext doc" -->
 And
 [HTML5rocks](http://www.html5rocks.com/en/tutorials/cors/) <!-- .element: class="icontext doc" -->
@@ -288,7 +295,7 @@ ca garantit que pour attaquer tes données, il faut attaquer ton site (XSS).
 CORS
 ----
 
-1. Browser sends an `OPTION` request with **Origin** header
+1. Browser sends an `OPTIONS` request with **Origin** header
 
     ```
     Origin: http://www.example-social-network.com
@@ -297,10 +304,12 @@ CORS
 2. Server return authorization in response header
 
     ```
+    Access-Control-Allow-Origin: http://www.example-social-network.com
     Access-Control-Allow-Credentials: true
     ```
 
 3. Browser sends request if authorized
+
 
 ---
 
