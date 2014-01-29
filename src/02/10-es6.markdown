@@ -8,6 +8,7 @@
 * [ES6 serie on http://ariya.ofilabs.com](http://ariya.ofilabs.com/tag/es6)
 * [Available in firefox](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.7?redirectlocale=en-US&redirectslug=JavaScript%2FNew_in_JavaScript%2F1.7)
 * [Can I Use ?](http://caniuse.com/)
+* [ES6 tools](https://github.com/addyosmani/es6-tools)
 
 ---
 
