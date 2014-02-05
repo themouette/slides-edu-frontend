@@ -86,7 +86,7 @@ module.exports = function(grunt) {
             },
             lesson4: {
                 options: {
-                    title: 'Cross browser and MV*'
+                    title: 'Styling'
                 },
                 files: [
                     {src: 'src/04/**/*.markdown', dest: 'lesson4.html'}
@@ -94,10 +94,18 @@ module.exports = function(grunt) {
             },
             lesson5: {
                 options: {
-                    title: 'Testing and tools'
+                    title: 'Single page App'
                 },
                 files: [
                     {src: 'src/05/**/*.markdown', dest: 'lesson5.html'}
+                ]
+            },
+            lesson6: {
+                options: {
+                    title: 'Testing and tools'
+                },
+                files: [
+                    {src: 'src/06/**/*.markdown', dest: 'lesson6.html'}
                 ]
             }
         },

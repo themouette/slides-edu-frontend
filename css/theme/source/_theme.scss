@@ -112,7 +112,7 @@
         border-left: 5px solid red;
     }
 
-    blockquote p.source {
+    p.source {
         display: block;
         text-align: right;
         color: lighten( $mainColor, 20% );
@@ -139,4 +139,7 @@
     accronym {
         text-decoration: none; border-bottom:1px dashed $linkColor;
     }
+
+    .text-left { text-align: left; }
+    .text-right { text-align: right; }
 }
