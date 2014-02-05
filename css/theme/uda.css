@@ -338,7 +338,7 @@ body {
 .reveal pre.red {
   box-shadow: 0 0 10px rgba(250, 0, 0, 0.6);
   border-left: 5px solid red; }
-.reveal blockquote p.source {
+.reveal p.source {
   display: block;
   text-align: right;
   color: #666666; }
@@ -359,3 +359,7 @@ body {
 .reveal accronym {
   text-decoration: none;
   border-bottom: 1px dashed #8cd800; }
+.reveal .text-left {
+  text-align: left; }
+.reveal .text-right {
+  text-align: right; }
