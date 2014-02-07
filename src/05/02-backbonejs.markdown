@@ -72,10 +72,7 @@ Joe.save()
 ``` javascript
 var UserCollection = Backbone.Collection.extend({
     model: User,
-    urlRoot: 'http://api.com/users',
-    defaults: {
-        name: 'John Doe'
-    }
+    url: 'http://api.com/users'
 });
 
 var users = new UserCollection();
