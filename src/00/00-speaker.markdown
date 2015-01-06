@@ -9,7 +9,7 @@ Who is speaking ?
 ## Julien MUETTON
 
 <p class="headline">
-Freelance **Software Craftsman**
+Frontend Devloper @**Gandi SAS**
 <span class="social">
 [<i class="fa fa-user"></i>](http://muetton.me)
 [<i class="fa fa-twitter-square"></i>](https://twitter.com/themouette)
@@ -21,6 +21,7 @@ Freelance **Software Craftsman**
 <div class="two-columns">
 <div class="jobs">
 <ul>
+    <li>[Gandi SAS](https://www.gandi.net) <span class="location">(Paris)</span></li>
     <li>[Almerys](https://www.almerys.com) <span class="location">(Clermont-Ferrand)</span></li>
     <li>[ITNetwork](http://www.itnetwork.fr/) <span class="location">(Paris / Romagnat)</span></li>
     <li>[Orange R&D](http://www.orange.fr) <span class="location">(Issy les Moulineaux, France)</span></li>
