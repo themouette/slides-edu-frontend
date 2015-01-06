@@ -142,6 +142,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask( 'dev', [ 'build:dev', 'concurrent:dev' ] );
     grunt.registerTask( 'release', [ 'build:release' ] );
+    grunt.registerTask( 'serve', [ 'connect:server:keepalive' ] );
 
     grunt.registerTask( 'default', [ 'dev' ] );
 };

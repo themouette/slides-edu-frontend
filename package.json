@@ -3,9 +3,11 @@
   "version": "0.0.0",
   "description": "Frontend (JavaScript, CSS and HTML) courses",
   "main": "index.js",
-  "directories": { },
+  "directories": {},
   "scripts": {
-    "start": "./node_modules/grunt-cli/bin/grunt dev",
+    "start": "grunt ",
+    "dev": "grunt dev",
+    "release": "grunt release",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,13 +25,13 @@
     "socket.io": "~0.9.16"
   },
   "devDependencies": {
+    "grunt": "0.4.x",
+    "grunt-cli": "^0.1.13",
+    "grunt-concurrent": ">=0.4.2",
     "grunt-contrib-connect": ">=0.3.*",
     "grunt-contrib-cssmin": ">=0.7.0",
     "grunt-contrib-watch": ">=0.5.3",
-    "grunt-concurrent": ">=0.4.2",
     "grunt-sass": ">=0.8.1",
-    "grunt-cli": ">=0.1.9",
-    "grunt": "0.4.x",
     "lodash": "*"
   }
 }
