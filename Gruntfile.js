@@ -86,7 +86,8 @@ module.exports = function(grunt) {
             },
             lesson4: {
                 options: {
-                    title: 'Styling'
+                    title: 'Styling',
+                    cover: 'img/04/logo_css3.png'
                 },
                 files: [
                     {src: 'src/04/**/*.markdown', dest: 'lesson4.html'}
