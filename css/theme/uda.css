@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 /**
  * Default theme for reveal.js.
  *
@@ -12,6 +11,7 @@
   font-weight: normal;
   font-style: normal; }
 
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -24,10 +24,10 @@ body {
   font-size: 36px;
   font-weight: normal;
   letter-spacing: -0.02em;
-  color: #333; }
+  color: #333333; }
 
 ::selection {
-  color: #fff;
+  color: white;
   background: rgba(79, 64, 28, 0.99);
   text-shadow: none; }
 
@@ -59,13 +59,13 @@ body {
   transition: color 0.15s ease; }
 
 .reveal a:not(.image):hover {
-  color: #bbff3f;
+  color: #bcff3f;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
-  color: #fff;
-  background: #5a8b00; }
+  color: white;
+  background: #5b8b00; }
 
 /*********************************************
  * IMAGES
@@ -73,7 +73,7 @@ body {
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #333;
+  border: 4px solid #333333;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -102,16 +102,16 @@ body {
   border-top-color: #8cd800; }
 
 .reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: #bbff3f; }
+  border-right-color: #bcff3f; }
 
 .reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: #bbff3f; }
+  border-left-color: #bcff3f; }
 
 .reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: #bbff3f; }
+  border-bottom-color: #bcff3f; }
 
 .reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: #bbff3f; }
+  border-top-color: #bcff3f; }
 
 /*********************************************
  * PROGRESS BAR
@@ -217,6 +217,7 @@ body {
   .cover .given-on:before {
     content: "Licence Professionnelle 2014"; }
 
+
 .speaker .headline {
   display: block;
   margin-bottom: 30px; }
@@ -242,7 +243,7 @@ body {
   width: 80%;
   margin: auto; }
 .reveal .html-demo table, .reveal .html-demo td, .reveal .html-demo th, .html-demo table, .html-demo td, .html-demo th {
-  border: 1px solid #333;
+  border: 1px solid #333333;
   text-align: center; }
 .reveal .html-demo.lists .three-columns, .html-demo.lists .three-columns {
   margin-top: 50px; }
@@ -273,13 +274,13 @@ body {
   width: 30%; }
 .reveal .dom-match .example {
   margin: 1em 0;
-  border: 1px solid #333;
+  border: 1px solid #333333;
   text-align: left; }
   .reveal .dom-match .example * * {
     margin-left: 1em;
     display: block; }
 .reveal .dom-match .highlight > * {
-  color: #333; }
+  color: #333333; }
 .reveal .dom-match .highlight {
   color: red; }
 

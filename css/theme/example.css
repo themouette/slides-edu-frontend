@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 /**
  * Default theme for reveal.js.
  *
@@ -12,6 +11,7 @@
   font-weight: normal;
   font-style: normal; }
 
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -24,10 +24,10 @@ body {
   font-size: 36px;
   font-weight: normal;
   letter-spacing: -0.02em;
-  color: #A7A9AC; }
+  color: #a7a9ac; }
 
 ::selection {
-  color: #fff;
+  color: white;
   background: rgba(79, 64, 28, 0.99);
   text-shadow: none; }
 
@@ -36,7 +36,7 @@ body {
  *********************************************/
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   margin: 0 0 20px 0;
-  color: #00A2E0;
+  color: #00a2e0;
   font-family: 'League Gothic', Impact, sans-serif;
   line-height: 0.9em;
   letter-spacing: 0.02em;
@@ -50,7 +50,7 @@ body {
  * LINKS
  *********************************************/
 .reveal a:not(.image) {
-  color: #FC7022;
+  color: #fc7022;
   text-decoration: none;
   -webkit-transition: color 0.15s ease;
   -moz-transition: color 0.15s ease;
@@ -59,13 +59,13 @@ body {
   transition: color 0.15s ease; }
 
 .reveal a:not(.image):hover {
-  color: #fdb187;
+  color: #fdb087;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
-  color: #fff;
-  background: #cf4c03; }
+  color: white;
+  background: #cf4a03; }
 
 /*********************************************
  * IMAGES
@@ -73,7 +73,7 @@ body {
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #A7A9AC;
+  border: 4px solid #a7a9ac;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -83,35 +83,35 @@ body {
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #FC7022;
+  border-color: #fc7022;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls div.navigate-left, .reveal .controls div.navigate-left.enabled {
-  border-right-color: #FC7022; }
+  border-right-color: #fc7022; }
 
 .reveal .controls div.navigate-right, .reveal .controls div.navigate-right.enabled {
-  border-left-color: #FC7022; }
+  border-left-color: #fc7022; }
 
 .reveal .controls div.navigate-up, .reveal .controls div.navigate-up.enabled {
-  border-bottom-color: #FC7022; }
+  border-bottom-color: #fc7022; }
 
 .reveal .controls div.navigate-down, .reveal .controls div.navigate-down.enabled {
-  border-top-color: #FC7022; }
+  border-top-color: #fc7022; }
 
 .reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: #fdb187; }
+  border-right-color: #fdb087; }
 
 .reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: #fdb187; }
+  border-left-color: #fdb087; }
 
 .reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: #fdb187; }
+  border-bottom-color: #fdb087; }
 
 .reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: #fdb187; }
+  border-top-color: #fdb087; }
 
 /*********************************************
  * PROGRESS BAR
@@ -120,7 +120,7 @@ body {
   background: rgba(0, 0, 0, 0.2); }
 
 .reveal .progress span {
-  background: #FC7022;
+  background: #fc7022;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
@@ -131,7 +131,7 @@ body {
  * SLIDE NUMBER
  *********************************************/
 .reveal .slide-number {
-  color: #FC7022; }
+  color: #fc7022; }
 
 .reveal i.fa {
   font-family: 'FontAwesome';
@@ -217,6 +217,7 @@ body {
   .cover .given-on:before {
     content: "Fill date in sass file"; }
 
+
 .speaker .headline {
   display: block;
   margin-bottom: 30px; }
@@ -242,7 +243,7 @@ body {
   width: 80%;
   margin: auto; }
 .reveal .html-demo table, .reveal .html-demo td, .reveal .html-demo th, .html-demo table, .html-demo td, .html-demo th {
-  border: 1px solid #A7A9AC;
+  border: 1px solid #a7a9ac;
   text-align: center; }
 .reveal .html-demo.lists .three-columns, .html-demo.lists .three-columns {
   margin-top: 50px; }
@@ -273,13 +274,13 @@ body {
   width: 30%; }
 .reveal .dom-match .example {
   margin: 1em 0;
-  border: 1px solid #A7A9AC;
+  border: 1px solid #a7a9ac;
   text-align: left; }
   .reveal .dom-match .example * * {
     margin-left: 1em;
     display: block; }
 .reveal .dom-match .highlight > * {
-  color: #A7A9AC; }
+  color: #a7a9ac; }
 .reveal .dom-match .highlight {
   color: red; }
 
@@ -357,7 +358,7 @@ body {
   width: auto; }
 .reveal accronym {
   text-decoration: none;
-  border-bottom: 1px dashed #FC7022; }
+  border-bottom: 1px dashed #fc7022; }
 .reveal .text-left {
   text-align: left; }
 .reveal .text-right {
