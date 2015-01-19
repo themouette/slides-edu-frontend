@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 /**
  * Solarized Dark theme for reveal.js.
  * Author: Achim Staebler
@@ -9,7 +10,6 @@
   font-weight: normal;
   font-style: normal; }
 
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 /**
  * Solarized colors by Ethan Schoonover
  */
@@ -32,7 +32,7 @@ body {
   color: #93a1a1; }
 
 ::selection {
-  color: white;
+  color: #fff;
   background: #d33682;
   text-shadow: none; }
 
@@ -64,13 +64,13 @@ body {
   transition: color 0.15s ease; }
 
 .reveal a:not(.image):hover {
-  color: #78bae6;
+  color: #78b9e6;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
-  color: white;
-  background: #1a6291; }
+  color: #fff;
+  background: #1a6091; }
 
 /*********************************************
  * IMAGES
@@ -107,16 +107,16 @@ body {
   border-top-color: #268bd2; }
 
 .reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: #78bae6; }
+  border-right-color: #78b9e6; }
 
 .reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: #78bae6; }
+  border-left-color: #78b9e6; }
 
 .reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: #78bae6; }
+  border-bottom-color: #78b9e6; }
 
 .reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: #78bae6; }
+  border-top-color: #78b9e6; }
 
 /*********************************************
  * PROGRESS BAR

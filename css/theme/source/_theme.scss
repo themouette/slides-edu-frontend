@@ -78,7 +78,12 @@
         display: inline-block;
         vertical-align: top;
     }
+    .three-columns > ul {
+        margin: 0 0 0 2%;
+        padding: 0;
+    }
     .three-columns > *:nth-child(3n+0) {
+        width: 30%;
         margin-right: 0%;
     }
     // override vertical behavior for code blocks
