@@ -6,7 +6,7 @@ Functional Programming
 Definition
 ----------
 
-* Dr Yannick Loiseau [on Functional programming](http://yloiseau.net/articles/functionnal/)
+* Dr Yannick Loiseau [on Functional programming](http://yloiseau.net/articles/functionnal/) and [video](http://clermontech.org/talks/api-hour-7/2-yannick-loiseau-functional-concepts-an-overview.html)
 * [Definition on Stack Overflow](http://stackoverflow.com/a/8357604)
 * [Refactor to functional](http://linusnorton.github.io/posts/refactor-to-functional/) by Linus Norton
 
