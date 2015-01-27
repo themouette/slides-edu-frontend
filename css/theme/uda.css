@@ -366,3 +366,5 @@ body {
   text-align: left; }
 .reveal .text-right {
   text-align: right; }
+.reveal .small-code pre > code {
+  font-size: 1.1em; }
