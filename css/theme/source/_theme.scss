@@ -147,4 +147,10 @@
 
     .text-left { text-align: left; }
     .text-right { text-align: right; }
+
+    .small-code {
+        pre > code {
+            font-size: 1.1em;
+        }
+    }
 }
