@@ -78,7 +78,18 @@ module.exports = function(grunt) {
             },
             lesson3: {
                 options: {
-                    title: 'Common Patterns'
+                    title: 'Async Common Patterns',
+                    // An array of extra scripts to include.
+                    scripts: [
+                        // XMLHttpRequest Diagram
+                        'scripts/raphael.js',
+                        'scripts/underscore.js',
+                        'scripts/sequence-diagram.js',
+                        'scripts/diagrams.js',
+
+                        'scripts/runnable.js',
+                        'scripts/dom-samples.js'
+                    ]
                 },
                 files: [
                     {src: 'src/03/**/*.markdown', dest: 'lesson3.html'}
